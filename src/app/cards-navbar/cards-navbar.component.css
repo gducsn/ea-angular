@@ -4,8 +4,16 @@
 }
 
 
+.btn-default{
+  border-color: black;
+  
 
-
+}
+.btn-change {
+    border-bottom: solid;
+    border-color: #EB4141;
+    border-width: 2px;
+}
 
 .wrap {
     display: flex;
@@ -57,11 +65,11 @@ a {
 
 
 
-.a-wrap:active{ 
+/*.a-wrap:active{ 
     border-bottom: solid;
     border-color: #EB4141;
     border-width: 2px;
 
     
 
-}
+} */
