@@ -11,5 +11,5 @@ export class CardsNavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+   
 }
