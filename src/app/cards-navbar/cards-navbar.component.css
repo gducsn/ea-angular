@@ -1,0 +1,67 @@
+@font-face {
+    font-family: x;
+    src: url(ElectronicArtsText-Regular.ttf);
+}
+
+
+
+
+
+.wrap {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color:#F1F1F1;
+
+}
+
+a {
+    text-decoration-line: none;
+    height: 30%;
+    
+    margin-right: 10px;
+    border-left-color: #CDCDCD;  
+    border-left-style: solid;
+    border-left-width: 2px;
+    padding-left: 15px;
+    font-family: x;
+    color: #423e3e;
+    font-size: 3vh;
+   
+    
+}
+
+.a-wrap {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 150px;
+
+    
+    
+}
+
+
+.a-wrap:hover{
+    background-color: #DEDEDE;
+    opacity: 0.7;
+
+    
+
+}
+
+
+
+
+.a-wrap:active{ 
+    border-bottom: solid;
+    border-color: #EB4141;
+    border-width: 2px;
+
+    
+
+}
