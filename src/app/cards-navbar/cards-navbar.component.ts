@@ -25,9 +25,9 @@ export class CardsNavbarComponent implements OnInit {
        this.btnStyle ="btn-default";
      }else{
        this.btnStyle = "btn-change";
-       this.btnStyle2 = "btn-default";
-       this.btnStyle3 = "btn-default";
-       this.btnStyle4 = "btn-default";
+       this.btnStyle2 = "btn-default";  // questa operazione è per annullare l'evento quando premo
+       this.btnStyle3 = "btn-default";  // su un altro bottone, senza questo codice, tutti i bottoni rimangono 
+       this.btnStyle4 = "btn-default";  // con il bordo inferiore arancione
        this.btnStyle5 = "btn-default";
        this.btnStyle6 = "btn-default";
        this.btnStyle7 = "btn-default";
