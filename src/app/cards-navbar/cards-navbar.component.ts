@@ -98,7 +98,7 @@ export class CardsNavbarComponent implements OnInit {
        this.btnStyle6 ="btn-default";
      }else{
        this.btnStyle6 = "btn-change";
-       this.btnStyle = "bt-default";
+       this.btnStyle = "btn-default";
        this.btnStyle3 = "btn-default";
        this.btnStyle4 = "btn-default";
        this.btnStyle5 = "btn-default";
@@ -112,7 +112,7 @@ export class CardsNavbarComponent implements OnInit {
        this.btnStyle7 ="btn-default";
      }else{
        this.btnStyle7 = "btn-change";
-       this.btnStyle = "bt-default";
+       this.btnStyle = "btn-default";
        this.btnStyle3 = "btn-default";
        this.btnStyle4 = "btn-default";
        this.btnStyle5 = "btn-default";
