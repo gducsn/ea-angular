@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CardsNavbarComponent } from './cards-navbar/cards-navbar.component';
 import { CardsComponent } from './cards/cards.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardsNavbarComponent,
-    CardsComponent
+    CardsComponent,
+    SideBarComponent
     
   ],
   imports: [
