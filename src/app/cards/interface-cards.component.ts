@@ -1,5 +1,7 @@
+export {Cards}
 
-export interface Cards {
+
+interface Cards {
     id: number;
     imgUrl: string;
     textEa: string;
