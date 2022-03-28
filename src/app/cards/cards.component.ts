@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { cardObj } from './obj-template-cards.component';
+import { cardObj } from './obj-template-cards';
 
 
 @Component({

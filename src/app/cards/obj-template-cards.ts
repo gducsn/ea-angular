@@ -1,4 +1,4 @@
-import { Cards } from "./interface-cards.component";
+import { Cards } from "./interface-cards";
 export {cardObj}
 
 const cardObj: Cards[] = 
