@@ -1,0 +1,9 @@
+.dropdown-item:hover{
+    color: red;
+    background-color: unset!important;
+  }
+   
+  .link{
+    text-decoration: none;
+    color: rgb(238, 77, 37);
+  }

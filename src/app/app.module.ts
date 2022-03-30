@@ -6,6 +6,7 @@ import { CardsNavbarComponent } from './cards-navbar/cards-navbar.component';
 import { CardsComponent } from './cards/cards.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SquareCardsComponent } from './square-cards/square-cards.component';
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { SquareCardsComponent } from './square-cards/square-cards.component';
     CardsNavbarComponent,
     CardsComponent,
     SideBarComponent,
-    SquareCardsComponent
+    SquareCardsComponent,
+    MenuBarComponent
     
   ],
   imports: [
