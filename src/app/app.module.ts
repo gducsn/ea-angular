@@ -7,6 +7,8 @@ import { CardsComponent } from './cards/cards.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SquareCardsComponent } from './square-cards/square-cards.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { FooterComponent } from './footer/footer.component';
+import { FooterButtonComponent } from './footer-button/footer-button.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
     CardsComponent,
     SideBarComponent,
     SquareCardsComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    FooterComponent,
+    FooterButtonComponent
     
   ],
   imports: [

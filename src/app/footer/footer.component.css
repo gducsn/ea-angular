@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.wrap1{
+    height: 218px;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+}
+
+.colsx{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.coldx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 37px;
+    left: -111px;
+}
+.one{
+    display: flex;
+
+}
+.two{
+    display: flex;
+}
+
+a {
+    margin-left: 61px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+a:hover{
+    color: #FE6172;
+}
+img{
+    margin-left: 10px;
+}
+.ico1:hover{
+    transform: scale(1.5);
+    height: 20px
+}
+.ico2:hover{
+    transform: scale(1.5);
+    height: 20px
+}
+.ico3:hover{
+    transform: scale(1.5);
+    height: 20px
+}
+.ico4:hover{
+    transform: scale(1.5);
+    height: 20px
+}
+.ico5:hover{
+    transform: scale(1.5);
+    height: 20px
+}
+
+.logo{
+    height: 64px;
+    height: 64px;
+}
+
+.a1{
+    font-family: 'Oswald', sans-serif;
+font-size: 18px;}
+
+
+.secondrow{
+ position: relative;    
+ left: 270px;
+  bottom: 61px;
+}
+.firstrow{
+    position: relative;
+    left: 200px;
+   margin-top: 40px;
+}
