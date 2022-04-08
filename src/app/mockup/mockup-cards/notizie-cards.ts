@@ -1,7 +1,8 @@
-import { Cards } from "./interface-cards";
-export {cardObj}
+import { NavBarCards } from "../../interface/interface-cards/navbar-cards-interface";
 
-const cardObj: Cards[] = 
+export {notizieCards}
+
+const notizieCards: NavBarCards[] = 
 [
   {
   id: 1,

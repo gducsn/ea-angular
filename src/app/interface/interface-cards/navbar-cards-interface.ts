@@ -1,7 +1,7 @@
-export {Cards}
+export {NavBarCards}
 
 
-interface Cards {
+interface NavBarCards {
     id: number;
     imgUrl: string;
     textEa: string;
