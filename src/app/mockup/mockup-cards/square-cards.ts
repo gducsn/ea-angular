@@ -1,11 +1,9 @@
-export {cardsObj}
-export interface Cards {
-    id: number;
-    imgUrl: string;
-    imgLogo: string;
-}
+import { SquareCards } from "../../interface/interface-cards/square-cards-interface";
 
-const cardsObj: Cards[] = 
+export {squareCards}
+
+
+const squareCards: SquareCards[] = 
 [
   {
   id: 1,

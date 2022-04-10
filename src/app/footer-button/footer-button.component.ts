@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Country } from '../interface/interface-cards/city';
 
 @Component({
   selector: 'app-footer-button',
@@ -6,20 +7,73 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer-button.component.css']
 })
 export class FooterButtonComponent implements OnInit {
+  country: Country[] = [
+    {name: "Austria"},
+    {name: "Belgio"},
+    {name: "Bulgaria"},
+    {name: "Croazia"},
+    {name: "Cipro"},
+    {name: "Repubblica Ceca"},
+    {name: "Danimarca"},
+    {name: "Estonia"},
+    {name: "Finlandia"},
 
-  constructor() { }
+    {name: "Francia"},
+    {name: "Germania"},
+    {name: "Grecia"},
+    {name: "Ungheria"},
+    {name: "Islanda"},
+    {name: "Irlanda"},
+    {name: "Italia"},
+    {name: "Lettonia"},
+    {name: "Liechtenstein"},
+
+    {name: "Lituana"},
+    {name: "Lussemburgo"},
+    {name: "Malta"},
+    {name: "Paesi Bassi"},
+    {name: "Norvegia"},
+    {name: "Polonia"},
+    {name: "Portogallo"},
+    {name: "Romania"},
+    {name: "Slovenia"},
+
+    {name: "Spagna"},
+    {name: "Svezia"},
+    {name: "Svizzera"},
+
+
+
+  ]
+  constructor() { 
+
+  }
 
   ngOnInit(): void {
   }
-  isOpen = false; 
-  style = "x"
-  btn1(){
-    if(this.isOpen === false){
-      this.isOpen = true;
-      this.style = "change"
-    }else{
-      this.isOpen = false;
-      this.style = "x";
-    }
+  selectedCountry: any;
+  isOpen: boolean = false;
+  dynamicBtn = "";
+  dynamicList = "";
+
+  select(city: any){
+    this.selectedCountry = city;
+    
   }
+
+  
+
+  open(){
+   if(this.isOpen === false){
+     this.isOpen = true;
+     this.dynamicBtn = "btn2";
+     this.dynamicList = "list2"
+
+   }else{
+     this.isOpen = false;
+     this.dynamicBtn = "btn";
+   }
+  }
+
+
 }

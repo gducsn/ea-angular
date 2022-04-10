@@ -72,8 +72,14 @@ img{
 
 .a1{
     font-family: 'Oswald', sans-serif;
-font-size: 18px;}
+font-size: 18px;
 
+}
+
+.a2{
+    position: relative;
+    right: 10px;
+}
 
 .secondrow{
  position: relative;    
@@ -84,4 +90,21 @@ font-size: 18px;}
     position: relative;
     left: 200px;
    margin-top: 40px;
+}
+
+.eainfo{
+    position: relative;
+    left: 270px;
+    bottom: 50px;
+    font-size: 12px;
+}
+
+.copylink{
+   position: relative;
+   top: 10px;
+}
+
+.trust{
+    position: relative;
+    left: 254px;
 }

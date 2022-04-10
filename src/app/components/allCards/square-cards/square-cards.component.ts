@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SquareCards } from 'src/app/interface/interface-cards/square-cards-interface';
+import { squareCards } from 'src/app/mockup/mockup-cards/square-cards';
 
-import { Cards, cardsObj } from './obj-template-square-cards';
 
 @Component({
   selector: 'app-square-cards',
@@ -8,7 +9,7 @@ import { Cards, cardsObj } from './obj-template-square-cards';
   styleUrls: ['./square-cards.component.css']
 })
 export class SquareCardsComponent implements OnInit {
-  cardsSquare: Cards[] = cardsObj;
+  cardsSquare: SquareCards[] = squareCards;
 
   constructor() { }
  
@@ -18,3 +19,4 @@ export class SquareCardsComponent implements OnInit {
   }
 
 }
+ 

@@ -1,71 +1,91 @@
-.wrap2{
-    height: 600px;
-    width: 100%;
-   
-}
-
-
-.x{
-    border-style: solid;
-    border-width: 1px;
-    border-color: #C2C2C2;
+.btn{
     height: 61px;
     width: 190px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding-left: 15px;
+    background-color: white;
+    border-color: grey;
+    border-width: 1px;
+    border-style: solid;
+    color: black;
     position: relative;
-    left: 1179px;
+    left: 199px;
+    bottom: -41px;
     
 }
 
-.p2{
+
+
+.ico{
     position: relative;
-    bottom: 10px;
+    left: 67px;
+    bottom: 52px;
+    width: 15px;
+    height: 15px;
+
 }
 
-
-.change{
-    border-style: solid;
+.countryList{
+    height: 453px;
+    width: 629px;
+    background-color: white;
+    border-color: grey;
     border-width: 1px;
-    border-color: #C2C2C2;
-    height: 61px;
-    width: 190px;
+    border-style: solid;
+    color: black; 
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    padding-left: 15px;
-    border-top: none;
-    box-shadow: -2px 9px 18px -3px rgba(0,0,0,0.33)
-
-
-
-    ;
-}
-
-.y{
-    border-style: solid;
-    border-width: 1px;
-    border-color: #C2C2C2;
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    padding-left: 15px;
-    gap: 30px;
+    flex-wrap: wrap;
     position: relative;
-    left: 891px;
-
+    top: 42px;
+    z-index: 7;
 }
 
-.w:hover{
-    transform: scale(1.020);
-    transition-duration: 0.7s;
-    transition-duration: 0.1s;
-    transition-property: opacity;
-    transition-timing-function: ease;
+.container{
+    width: 190px;
+    height: 61px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 88px;
+    
 }
 
+.dynamic{
+    display: flex;
+    width: 123px;
+    height: 47px;
+    justify-content: start;
+    align-items: center;
+    margin-left: 28px;
+    border-bottom-color: #EAEAEA;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+a{
+    text-decoration-line: none;
+    color: #676767;
+}
+
+.x{
+    position: relative;
+    left: -31px;
+}
+
+.selectedCountry{
+    position: relative;
+    left: -62px;
+    bottom: 7px;
+}
+
+.selectedCountry1{
+    position: relative;
+    left: -35px;
+    bottom: 7px;
+}
+
+.a:hover{
+    transition-timing-function: linear;
+}
 
