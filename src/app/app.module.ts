@@ -15,6 +15,8 @@ import { ApexCardsComponent } from './components/allCards/apex-cards/apex-cards.
 import { BattlefieldCardsComponent } from './components/allCards/battlefield-cards/battlefield-cards.component';
 import { F1CardsComponent } from './components/allCards/f1-cards/f1-cards.component';
 import { InsideCardsComponent } from './components/allCards/inside-cards/inside-cards.component';
+import { VerticalDrawerComponent } from './vertical-drawer/vertical-drawer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +32,8 @@ import { InsideCardsComponent } from './components/allCards/inside-cards/inside-
     ApexCardsComponent,
     BattlefieldCardsComponent,
     F1CardsComponent,
-    InsideCardsComponent
-
-
+    InsideCardsComponent,
+    VerticalDrawerComponent
     
 
     
