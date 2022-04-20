@@ -1,91 +1,90 @@
-.btn{
-    height: 61px;
-    width: 190px;
-    background-color: white;
-    border-color: grey;
-    border-width: 1px;
-    border-style: solid;
-    color: black;
-    position: relative;
-    left: 199px;
-    bottom: -41px;
-    
-}
-
-
-
-.ico{
-    position: relative;
-    left: 67px;
-    bottom: 52px;
-    width: 15px;
-    height: 15px;
+.btn {
+  height: 61px;
+  width: 190px;
+  background-color: white;
+  border-color: grey;
+  border-width: 1px;
+  border-style: solid;
+  color: black;
+  position: relative;
+  left: 199px;
+  bottom: -41px;
 
 }
 
-.countryList{
-    height: 453px;
-    width: 629px;
-    background-color: white;
-    border-color: grey;
-    border-width: 1px;
-    border-style: solid;
-    color: black; 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-    top: 42px;
-    z-index: 7;
+
+
+.ico {
+  position: relative;
+  left: 67px;
+  bottom: 52px;
+  width: 15px;
+  height: 15px;
+
 }
 
-.container{
-    width: 190px;
-    height: 61px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 88px;
-    
+.countryList {
+  height: 453px;
+  width: 629px;
+  background-color: white;
+  border-color: grey;
+  border-width: 1px;
+  border-style: solid;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  top: 42px;
+  z-index: 7;
 }
 
-.dynamic{
-    display: flex;
-    width: 123px;
-    height: 47px;
-    justify-content: start;
-    align-items: center;
-    margin-left: 28px;
-    border-bottom-color: #EAEAEA;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+.container {
+  width: 190px;
+  height: 61px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 88px;
+
 }
 
-a{
-    text-decoration-line: none;
-    color: #676767;
+.dynamic {
+  display: flex;
+  width: 123px;
+  height: 47px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 28px;
+  border-bottom-color: #EAEAEA;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
-.x{
-    position: relative;
-    left: -31px;
+a {
+  text-decoration-line: none;
+  color: #676767;
 }
 
-.selectedCountry{
-    position: relative;
-    left: -62px;
-    bottom: 7px;
+.x {
+  position: relative;
+  left: -31px;
 }
 
-.selectedCountry1{
-    position: relative;
-    left: -35px;
-    bottom: 7px;
+.selectedCountry {
+  position: relative;
+  left: -62px;
+  bottom: 7px;
 }
 
-.a:hover{
-    transition-timing-function: linear;
+.selectedCountry1 {
+  position: relative;
+  left: -35px;
+  bottom: 7px;
 }
 
+.a:hover {
+  transition-timing-function: linear;
+}
