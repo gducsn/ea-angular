@@ -17,6 +17,7 @@ import { F1CardsComponent } from './components/allCards/f1-cards/f1-cards.compon
 import { InsideCardsComponent } from './components/allCards/inside-cards/inside-cards.component';
 import { CardBottomComponent } from './card-bottom/card-bottom.component';
 import { VerticalDrawerComponent } from './vertical-drawer/vertical-drawer.component';
+import { CardTopComponent } from './card-top/card-top.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { VerticalDrawerComponent } from './vertical-drawer/vertical-drawer.compo
     F1CardsComponent,
     InsideCardsComponent,
     CardBottomComponent,
-    VerticalDrawerComponent
+    VerticalDrawerComponent,
+    CardTopComponent
 
 
   ],
