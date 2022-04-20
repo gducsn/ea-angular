@@ -15,7 +15,12 @@ import { ApexCardsComponent } from './components/allCards/apex-cards/apex-cards.
 import { BattlefieldCardsComponent } from './components/allCards/battlefield-cards/battlefield-cards.component';
 import { F1CardsComponent } from './components/allCards/f1-cards/f1-cards.component';
 import { InsideCardsComponent } from './components/allCards/inside-cards/inside-cards.component';
+<<<<<<< HEAD
 import { CardBottomComponent } from './card-bottom/card-bottom.component';
+=======
+import { VerticalDrawerComponent } from './vertical-drawer/vertical-drawer.component';
+
+>>>>>>> 817b54db465a7b9b2d241682f5827201b58f4cb4
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,9 +37,13 @@ import { CardBottomComponent } from './card-bottom/card-bottom.component';
     BattlefieldCardsComponent,
     F1CardsComponent,
     InsideCardsComponent,
+<<<<<<< HEAD
     CardBottomComponent
 
 
+=======
+    VerticalDrawerComponent
+>>>>>>> 817b54db465a7b9b2d241682f5827201b58f4cb4
     
 
     
