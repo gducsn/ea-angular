@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Country } from '../interface/interface-cards/city';
+import { Country } from 'src/app/interface/interface-cards/city';
+
 
 @Component({
   selector: 'app-footer-button',

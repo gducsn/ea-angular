@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NotizieCardsComponent } from '../components/allCards/notizie-cards/notizie-cards.component';
+
 @Component({
   selector: 'app-cards-navbar',
   templateUrl: './cards-navbar.component.html',
