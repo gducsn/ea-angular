@@ -1,6 +1,6 @@
-<div class="blockCards">
+<div class="blockCards" *ngIf="battleFieldCardsIsOpen">
   <div class="allCards">
-    <div class="cardContainer" *ngFor="let element of battlefieldCards;">
+    <div class="cardContainer" *ngFor="let element of battleFieldData;">
       <img class="imgCards" src="{{element.imgUrl}}" alt="immagine cards">
       <div class="textFlex">
         <h1 class="textEa">{{element.textEa}} <span class="textDate">{{element.textDate}}</span></h1>
@@ -9,7 +9,8 @@
       </div>
     </div>
   </div>
+ 
 </div>
-<div class="flexButton">
+<div class="flexButton" *ngIf="battleFieldCardsIsOpen" >
   <input type="button" value="Più dettagli" class="buttonCards">
 </div>

@@ -2,6 +2,7 @@ export {NavBarCards}
 
 
 interface NavBarCards {
+    extraClass: string;
     id: number;
     imgUrl: string;
     textEa: string;

@@ -1,18 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NavBarCards } from 'src/app/interface/interface-cards/navbar-cards-interface';
-import { eaPlayCards } from 'src/app/mockup/mockup-cards/eaplay-cards';
-
+import { NavbarCardsService } from 'src/app/navbar-cards.service';
 @Component({
   selector: 'app-eaplay-cards',
   templateUrl: './eaplay-cards.component.html',
   styleUrls: ['./eaplay-cards.component.css']
 })
 export class EaplayCardsComponent implements OnInit {
-  eaPlayCards: NavBarCards[] = eaPlayCards
+  eaPlayData : NavBarCards[] = [];
+  eaPlay: NavBarCards[] = [];
+  @Input() eaPlayCardsIsOpen!: boolean;
 
-  constructor() { }
 
-  ngOnInit(): void {
+  constructor(private dataService: NavbarCardsService) { }
+
+  ngOnInit(): NavBarCards[] {
+     this.eaPlay = this.dataService.getEaPlayCards();
+    return this.eaPlayData = this.eaPlay;
+    this.eaPlayData = this.dataService.updateCards(this.eaPlayData, 3, 5555, "CIAO","siisis","siisis","siisis",);   
+
   }
+ 
 
 }

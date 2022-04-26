@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NavBarCards } from 'src/app/interface/interface-cards/navbar-cards-interface';
-import { battlefieldCards } from 'src/app/mockup/mockup-cards/battelefield-cards';
+import { NavbarCardsService } from 'src/app/navbar-cards.service';
 
 @Component({
   selector: 'app-battlefield-cards',
@@ -8,13 +8,23 @@ import { battlefieldCards } from 'src/app/mockup/mockup-cards/battelefield-cards
   styleUrls: ['./battlefield-cards.component.css']
 })
 export class BattlefieldCardsComponent implements OnInit {
+  battleFieldData: NavBarCards[] = [];
+  battleField: NavBarCards[] = [];
+  @Input() battleFieldCardsIsOpen!: boolean;
 
-  battlefieldCards: NavBarCards[] = battlefieldCards;
+  
 
 
-  constructor() { }
+  constructor(private dataService: NavbarCardsService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): NavBarCards[] {
+    this.battleField = this.dataService.getBattleFieldCards();
+    this.battleFieldData = this.battleField;
+    return this.battleFieldData;
+    this.battleFieldData = this.dataService.updateCards(this.battleFieldData, 3, 5555, "CIAO","siisis","siisis","siisis",);  
+
   }
+
+ 
 
 }

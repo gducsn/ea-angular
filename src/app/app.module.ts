@@ -7,7 +7,6 @@ import { SquareCardsComponent } from './components/allCards/square-cards/square-
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FooterButtonComponent } from './footer-button/footer-button.component';
-import { AppRoutingModule } from './app-routing.module';
 import { NotizieCardsComponent } from './components/allCards/notizie-cards/notizie-cards.component';
 import { EaplayCardsComponent } from './components/allCards/eaplay-cards/eaplay-cards.component';
 import { FifaCardsComponent } from './components/allCards/fifa-cards/fifa-cards.component';
@@ -30,7 +29,8 @@ import { InsideCardsComponent } from './components/allCards/inside-cards/inside-
     ApexCardsComponent,
     BattlefieldCardsComponent,
     F1CardsComponent,
-    InsideCardsComponent
+    InsideCardsComponent,
+
 
 
     
@@ -39,7 +39,7 @@ import { InsideCardsComponent } from './components/allCards/inside-cards/inside-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    
 
   ],
   providers: [],
