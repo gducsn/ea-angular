@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NavBarCards } from '../interface/interface-cards/navbar-cards-interface';
-import { NavbarCardsService } from '../navbar-cards.service';
+import { NavBarCards } from 'src/app/interface/interface-cards/navbar-cards-interface';
+import { NavbarCardsService } from 'src/app/navbar-cards.service';
 @Component({
   selector: 'app-cards-navbar',
   templateUrl: './cards-navbar.component.html',
