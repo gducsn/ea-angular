@@ -1,18 +1,12 @@
 <div class="wrap" >
-    <div class="a-wrap one"  > <a href="#" (click)="openNotizie($event)" >Notizie EA</a></div>
-    <div class="a-wrap two" > <a href="#"  (click)="openEaPlay($event)">EA Play</a></div>
-        <div class="a-wrap three"  > <a href="#" (click)="openFifa($event)">FIFA</a></div>
-            <div class="a-wrap four" > <a href="#" (click)="openApex($event)" >Apex Legends</a></div>
-                <div class="a-wrap five"  > <a href="#" (click)="openBattleField($event)" >Battlefield</a></div>
+    <div class="a-wrap one"  > <a href="#" (click)="showObj(notizieData)" >Notizie EA</a></div>
+    <div class="a-wrap two"> <a href="#" (click)="showObj(eaData)">EA Play</a></div>
+        <div class="a-wrap three"  > <a href="#" (click)="showObj(fifaData)" >FIFA</a></div>
+            <div class="a-wrap four" > <a href="#" (click)="showObj(apexData)">Apex Legends</a></div>
+                <div class="a-wrap five"  > <a href="#" (click)="showObj(battleFieldData)" >Battlefield</a></div>
                     <div class="a-wrap six" > <a href="#" >The Sims 4</a></div>
-                        <div class="a-wrap seven" > <a href="#"  (click)="openF1($event)">F1 2021</a></div>
-                            <div class="a-wrap height" > <a href="#" (click)="openInside($event)">Inside EA</a></div>
+                        <div class="a-wrap seven"  > <a href="#" (click)="showObj(f1Data)" >F1 2021</a></div>
+                            <div class="a-wrap height" > <a href="#" (click)="showObj(insideData)" >Inside EA</a></div>
 </div>
 
-<app-notizie-cards [notizieCardsIsOpen]="notizieCardsIsOpen"></app-notizie-cards>
-<app-eaplay-cards [eaPlayCardsIsOpen]="eaPlayCardsIsOpen"></app-eaplay-cards>
-<app-fifa-cards [fifaCardsIsOpen]="fifaCardsIsOpen"></app-fifa-cards>
-<app-apex-cards [apexCardsIsOpen]="apexCardsIsOpen" ></app-apex-cards>
-<app-battlefield-cards [battleFieldCardsIsOpen]="battleFieldCardsIsOpen"></app-battlefield-cards>
-<app-f1-cards [f1IsOpen]="f1IsOpen"></app-f1-cards>
-<app-inside-cards [insideIsOpen]="insideIsOpen"></app-inside-cards>
+<app-navbarcards [data]="data"></app-navbarcards>

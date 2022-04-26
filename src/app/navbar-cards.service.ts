@@ -399,39 +399,31 @@ private fifaCards: NavBarCards[] = [ {
   textMain: 'EA SPORTS esprime tutta la propria solidaritetà nei confronti del popolo ucraino e, come tante altre voci nel mondo del calcio, lancia un appello per il ritorno della pace e la fine dell/invasione dell/Ucraina'
 }] 
   constructor() { }
-  getBattleFieldCards(){
+  getBattleFieldData(){
     return this.battleFieldCard;
-   }
-   getApexCards(){
+  }
+  getApexData(){
     return this.apexCards;
-   }
-   getEaPlayCards(){
-     return this.eaPlayCards;
-   }
-   getf1Cards(){
+  }
+  getEaData(){
+    return this.eaPlayCards;
+  }
+  getf1Data(){
     return this.f1Cards;
   }
-  getNotizieCards(){
+  getNotizieData(){
     return this.notizieCards;
   }
-  getInsideEaCards(){
-    return this.insideEaCards;
+  getInsideData(){
+    return this.insideEaCards
   }
-  getFifaCards(){
+  getFifaData(){
     return this.fifaCards;
-  }  // SERVIZI PER TORNARE TUTTI GLI ARRAY DI OGGETTI DI TUTTE LE CARDS
- 
+  }
 
-
-  // SERVIZIO PER CAMBIARE GLI OGGETTI E LE LORO PROPRIETA': obj è l'array di oggetti che vogliamo (battlefield, f1, etc..), index è l'index e il resto sono le varie proprietà
-      updateCards(obj: NavBarCards[], index: number, id: number, imgUrl: string, textDate: string, textTitle: string, textMain:string,  ){ 
-        obj[index].id = id;
-        obj[index].imgUrl = imgUrl;
-        obj[index].textDate = textDate;
-        obj[index].textTitle = textTitle;
-        obj[index].textMain = textMain;
-        return obj; };
-
+  addData(selectedObject: NavBarCards[]){
+    return selectedObject;
+  }
        
 
 }

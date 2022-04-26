@@ -7,13 +7,10 @@ import { SquareCardsComponent } from './components/allCards/square-cards/square-
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FooterButtonComponent } from './footer-button/footer-button.component';
-import { NotizieCardsComponent } from './components/allCards/notizie-cards/notizie-cards.component';
-import { EaplayCardsComponent } from './components/allCards/eaplay-cards/eaplay-cards.component';
-import { FifaCardsComponent } from './components/allCards/fifa-cards/fifa-cards.component';
-import { ApexCardsComponent } from './components/allCards/apex-cards/apex-cards.component';
-import { BattlefieldCardsComponent } from './components/allCards/battlefield-cards/battlefield-cards.component';
-import { F1CardsComponent } from './components/allCards/f1-cards/f1-cards.component';
-import { InsideCardsComponent } from './components/allCards/inside-cards/inside-cards.component';
+import { CardBottomComponent } from './card-bottom/card-bottom.component';
+import { VerticalDrawerComponent } from './vertical-drawer/vertical-drawer.component';
+import { CardTopComponent } from './card-top/card-top.component';
+import { NavbarcardsComponent } from './components/allCards/navbarcards/navbarcards.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,19 +20,10 @@ import { InsideCardsComponent } from './components/allCards/inside-cards/inside-
     MenuBarComponent,
     FooterComponent,
     FooterButtonComponent,
-    NotizieCardsComponent, 
-    EaplayCardsComponent, 
-    FifaCardsComponent,
-    ApexCardsComponent,
-    BattlefieldCardsComponent,
-    F1CardsComponent,
-    InsideCardsComponent,
-
-
-
-    
-
-    
+    CardBottomComponent,
+    VerticalDrawerComponent,
+    CardTopComponent,
+    NavbarcardsComponent
   ],
   imports: [
     BrowserModule,

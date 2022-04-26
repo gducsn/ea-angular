@@ -7,226 +7,49 @@ import { NavbarCardsService } from '../navbar-cards.service';
   styleUrls: ['./cards-navbar.component.css']
 })
 export class CardsNavbarComponent implements OnInit {
-   notizieCardsIsOpen = false;
-  apexCardsIsOpen = false;
-  battleFieldCardsIsOpen = false;
-  eaPlayCardsIsOpen = false;
-  fifaCardsIsOpen = false;
-  insideIsOpen = false;
-  f1IsOpen = false;
+  data: NavBarCards[] = [];
 
- 
-  constructor() { }
+   returnApex: NavBarCards[] = [];  
+   returnBattleField: NavBarCards[] = []; 
+   returnFifa: NavBarCards[] = [];
+   returnEa: NavBarCards[] = [];
+   returnF1: NavBarCards[] = [];
+   returnNotizie: NavBarCards[] = [];
+   returnInside: NavBarCards[] = [];
 
-  ngOnInit(): void{
-   
+   apexData: NavBarCards[] = [];
+   battleFieldData: NavBarCards[] = [];
+   fifaData: NavBarCards[] = [];
+   eaData: NavBarCards[] = [];
+   f1Data: NavBarCards[] = [];
+   notizieData: NavBarCards[] = [];
+   insideData: NavBarCards[] = [];
+
+  constructor(private cardsService: NavbarCardsService) { }
+
+  ngOnInit(): NavBarCards[]{
+    this.returnApex = this.cardsService.getApexData();
+    this.returnBattleField = this.cardsService.getBattleFieldData();
+    this.battleFieldData = this.returnBattleField;
+    this.apexData = this.returnApex;
+    this.returnFifa = this.cardsService.getFifaData();
+    this.fifaData = this.returnFifa;
+    this.returnEa = this.cardsService.getEaData();
+    this.eaData = this.returnEa;
+    this.returnF1 = this.cardsService.getf1Data();
+    this.f1Data = this.returnF1;
+    this.returnInside = this.cardsService.getInsideData();
+    this.insideData = this.returnInside;
+    this.returnNotizie = this.cardsService.getNotizieData();
+    this.notizieData = this.returnNotizie;
+    
+    return this.battleFieldData && this.apexData && this.fifaData && this.f1Data && this.insideData && this.notizieData && this.eaData;
  }
 
- openNotizie(event: any){
-   event.preventDefault();
-  
-
-   if(this.notizieCardsIsOpen === false){
-    this.notizieCardsIsOpen  = true;
-    this.apexCardsIsOpen = false;
-    this.battleFieldCardsIsOpen = false;
-    this.eaPlayCardsIsOpen = false;
-    this.fifaCardsIsOpen = false;
-    this.insideIsOpen = false;
-    this.f1IsOpen = false;
-
-
-
-
-
-   }else{
-    this.notizieCardsIsOpen = false;
-    this.apexCardsIsOpen = false;
-    this.battleFieldCardsIsOpen = false;
-    this.eaPlayCardsIsOpen = false;
-    this.fifaCardsIsOpen = false;
-    this.insideIsOpen = false;
-    this.f1IsOpen = false;
-
-
-
-
-
-   } 
-  }
-   openApex(event: any){
-    event.preventDefault()
-
-    if(this.apexCardsIsOpen === false){
-     this.apexCardsIsOpen  = true;
-     this.notizieCardsIsOpen = false;
-     this.battleFieldCardsIsOpen = false;
-     this.eaPlayCardsIsOpen = false;
-     this.fifaCardsIsOpen = false;
-     this.insideIsOpen = false;
-     this.f1IsOpen = false;
-
-
-
-
-
-
-
-    }else{
-     this.apexCardsIsOpen = false;
-     this.notizieCardsIsOpen = false;
-     this.battleFieldCardsIsOpen = false;
-     this.eaPlayCardsIsOpen = false;
-     this.fifaCardsIsOpen = false;
-     this.insideIsOpen = false;
-     this.f1IsOpen = false;
-
-
-
-
-
-    }
-  
- }
- openBattleField(event: any){
-  event.preventDefault()
-
-  if(this.battleFieldCardsIsOpen === false){
-   this.battleFieldCardsIsOpen  = true;
-   this.notizieCardsIsOpen = false;
-   this.apexCardsIsOpen = false;
-   this.eaPlayCardsIsOpen = false;
-   this.fifaCardsIsOpen = false;
-   this.insideIsOpen = false;
-   this.f1IsOpen = false;
-
-
-
-
-  }else{
-   this.battleFieldCardsIsOpen = false;
-   this.notizieCardsIsOpen = false;
-   this.apexCardsIsOpen = false;
-   this.eaPlayCardsIsOpen = false;
-   this.fifaCardsIsOpen = false;
-   this.insideIsOpen = false;
-   this.f1IsOpen = false;
-
-
-
-
-  }
-
+ showObj(selectedObject: NavBarCards[]){
+  this.data = this.cardsService.addData(selectedObject);
+  this.cardsService.addData(selectedObject)
 }
-
-openEaPlay(event: any){
-  event.preventDefault()
-
-  if(this.eaPlayCardsIsOpen === false){
-   this.eaPlayCardsIsOpen  = true;
-   this.notizieCardsIsOpen = false;
-   this.apexCardsIsOpen = false;
-   this.battleFieldCardsIsOpen = false;
-   this.fifaCardsIsOpen = false;
-   this.insideIsOpen = false;
-   this.f1IsOpen = false;
-
-
-
-
-  }else{
-   this.eaPlayCardsIsOpen = false;
-   this.notizieCardsIsOpen = false;
-   this.apexCardsIsOpen = false;
-   this.battleFieldCardsIsOpen = false;
-   this.fifaCardsIsOpen = false;
-   this.insideIsOpen = false;
-   this.f1IsOpen = false;
-
-
-
-
-  }
-}
-  openFifa(event: any){
-    event.preventDefault()
-  
-    if(this.fifaCardsIsOpen === false){
-     this.fifaCardsIsOpen  = true;
-     this.notizieCardsIsOpen = false;
-     this.apexCardsIsOpen = false;
-     this.battleFieldCardsIsOpen = false;
-     this.eaPlayCardsIsOpen = false;
-     this.insideIsOpen = false;
-     this.f1IsOpen = false;
-
-  
-    }else{
-     this.fifaCardsIsOpen = false;
-     this.notizieCardsIsOpen = false;
-     this.apexCardsIsOpen = false;
-     this.battleFieldCardsIsOpen = false;
-     this.eaPlayCardsIsOpen = false;
-     this.insideIsOpen = false;
-     this.f1IsOpen = false;
-
-
-  
-    }
-}
- 
-openInside(event: any){
-  event.preventDefault()
-
-  if(this.insideIsOpen === false){
-   this.insideIsOpen  = true;
-   this.notizieCardsIsOpen = false;
-   this.apexCardsIsOpen = false;
-   this.battleFieldCardsIsOpen = false;
-   this.eaPlayCardsIsOpen = false
-   this.fifaCardsIsOpen = false;
-   this.f1IsOpen = false;
-
-
-  }else{
-   this.insideIsOpen = false;
-   this.notizieCardsIsOpen = false;
-   this.apexCardsIsOpen = false;
-   this.battleFieldCardsIsOpen = false;
-   this.eaPlayCardsIsOpen = false;
-   this.fifaCardsIsOpen = false;
-   this.f1IsOpen = false;
-
-
-
-  }
-}
-  
-openF1(event: any){
-  event.preventDefault()
-
-  if(this.f1IsOpen === false){
-    this.f1IsOpen = true;
-   this.insideIsOpen  = false;
-   this.notizieCardsIsOpen = false;
-   this.apexCardsIsOpen = false;
-   this.battleFieldCardsIsOpen = false;
-   this.eaPlayCardsIsOpen = false
-   this.fifaCardsIsOpen = false;
-
-  }else{
-   this.insideIsOpen = false;
-   this.f1IsOpen = false;
-   this.notizieCardsIsOpen = false;
-   this.apexCardsIsOpen = false;
-   this.battleFieldCardsIsOpen = false;
-   this.eaPlayCardsIsOpen = false;
-   this.fifaCardsIsOpen = false;
-
-
-  }
-}
- 
  
 }
 

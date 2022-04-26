@@ -176,3 +176,9 @@
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
+
+
+.blockSpace {
+  z-index: 1;
+
+}
