@@ -1,5 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { SquareCardsComponent } from './components/allCards/square-cards/square-cards.component';
@@ -12,6 +12,8 @@ import { CardTopComponent } from './components/card-top/card-top.component';
 import { NavbarcardsComponent } from './components/allCards/navbarcards/navbarcards.component';
 import { CardsNavbarComponent } from './components/cards-navbar/cards-navbar.component';
 import { AppRoutingModule } from './routing/app-routing.module';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,16 @@ import { AppRoutingModule } from './routing/app-routing.module';
     VerticalDrawerComponent,
     CardTopComponent,
     NavbarcardsComponent,
-    CardsNavbarComponent
+    CardsNavbarComponent,
+    NotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 
