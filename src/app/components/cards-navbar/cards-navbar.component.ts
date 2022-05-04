@@ -7,6 +7,8 @@ import { NavbarCardsService } from 'src/app/service/navbar-cards.service';
   styleUrls: ['./cards-navbar.component.css']
 })
 export class CardsNavbarComponent implements OnInit {
+  onOff: boolean = false;
+
   data: NavBarCards[] = [];
 
    returnApex: NavBarCards[] = [];  
@@ -42,14 +44,20 @@ export class CardsNavbarComponent implements OnInit {
     this.insideData = this.returnInside;
     this.returnNotizie = this.cardsService.getNotizieData();
     this.notizieData = this.returnNotizie;
-    this.showObj(this.notizieData)
+    this.showObj(this.notizieData,false)
     return this.battleFieldData && this.apexData && this.fifaData && this.f1Data && this.insideData && this.notizieData && this.eaData;
  }
 
- showObj(selectedObject: NavBarCards[]){
+ showObj(selectedObject: NavBarCards[] | any, value:boolean){
   this.data = this.cardsService.addData(selectedObject);
   this.cardsService.addData(selectedObject)
+  if(value == false){
+    this.onOff = false;
+  } else this.onOff = true;
+  
 }
+
+
  
 }
 
