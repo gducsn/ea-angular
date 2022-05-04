@@ -11,6 +11,8 @@ import { VerticalDrawerComponent } from './components/vertical-drawer/vertical-d
 import { CardTopComponent } from './components/card-top/card-top.component';
 import { NavbarcardsComponent } from './components/allCards/navbarcards/navbarcards.component';
 import { CardsNavbarComponent } from './components/cards-navbar/cards-navbar.component';
+import { AppRoutingModule } from './routing/app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,8 +29,8 @@ import { CardsNavbarComponent } from './components/cards-navbar/cards-navbar.com
   ],
   imports: [
     BrowserModule,
-    
-
+    AppRoutingModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent],
