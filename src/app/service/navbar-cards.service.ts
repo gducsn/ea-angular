@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { NavBarCards } from './interface/interface-cards/navbar-cards-interface';
+import { NavBarCards } from '../interface/interface-cards/navbar-cards-interface';
 @Injectable({
   providedIn: 'root'
 })

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NavBarCards } from 'src/app/interface/interface-cards/navbar-cards-interface';
-import { NavbarCardsService } from 'src/app/navbar-cards.service';
+import { NavbarCardsService } from 'src/app/service/navbar-cards.service';
 @Component({
   selector: 'app-cards-navbar',
   templateUrl: './cards-navbar.component.html',
@@ -42,7 +42,7 @@ export class CardsNavbarComponent implements OnInit {
     this.insideData = this.returnInside;
     this.returnNotizie = this.cardsService.getNotizieData();
     this.notizieData = this.returnNotizie;
-    
+    this.showObj(this.notizieData)
     return this.battleFieldData && this.apexData && this.fifaData && this.f1Data && this.insideData && this.notizieData && this.eaData;
  }
 

@@ -10,6 +10,28 @@ body {
   z-index: 9;
 }
 
+@font-face {
+  font-family: "bold";
+  src: url(src/assets/font/ElectronicArtsText-Bold.ttf);
+}
+
+@font-face {
+  font-family: "ligth";
+  src: url(src/assets/font/ElectronicArtsText-Light.ttf);
+}
+
+@font-face {
+  font-family: "regular";
+  src: url(src/assets/font/ElectronicArtsText-Regular.ttf);
+}
+
+@font-face {
+  font-family: "disreg";
+  src: url(src/assets/font/Displayreg.ttf);
+}
+
+
+
 .naving {
   position: fixed;
   overflow: hidden;
@@ -59,6 +81,7 @@ body {
 
 .adding h1 {
   color: white;
+
 }
 
 .userFlex {
@@ -75,7 +98,10 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+
 }
+
+
 
 .log,
 .reg {
@@ -91,8 +117,11 @@ body {
 }
 
 .userFlex h1 {
-  font-size: 13px;
+  font-size: 16px;
   color: white;
+  font-family: regular;
+  margin-top: 14px;
+
 }
 
 .inv {
@@ -218,4 +247,22 @@ span {
 
 .wrap02 div {
   display: inherit;
+}
+
+
+
+.selfAlign h1 {
+  font-family: bold;
+  font-size: 18px;
+}
+
+.c1 h1 {
+  margin-top: 14px;
+  font-size: 16px;
+  font-family: regular;
+}
+
+.textWrap h1 {
+  font-family: regular;
+  font-size: 13px;
 }
