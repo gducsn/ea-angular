@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "regular";
+  src: url(src/assets/font/ElectronicArtsText-Regular.ttf);
+}
+
+
+
+
+#imgOne {
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+  top: 0;
+  position: absolute;
+}
+
+#imgTwo {
+  position: relative;
+  width: 40%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.flexIMG {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text404 {
+  color: white;
+  z-index: 1;
+  font-family: regular;
+  font-size: 1.6em;
+  padding: 10px;
+}
+
+.buttonPage {
+  padding: 10px;
+  z-index: 1;
+  color: white;
+}
+
+
+.buttonPage {
+  background: transparent;
+  border: 2px solid white;
+  padding: 16px 24px;
+  font-size: 18px;
+  font-family: regular;
+  line-height: normal;
+  text-decoration: none;
+  margin: 40px 0px;
+}
+
+.buttonPage:hover {
+  transform: scale(1.020);
+  transition-duration: 0.7s;
+  transition-duration: 0.1s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}

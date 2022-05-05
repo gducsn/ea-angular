@@ -30,6 +30,7 @@
   background-color: #F3F3F3;
 }
 
+
 .imgCards {
   width: 100%;
   height: 100%;
@@ -181,4 +182,95 @@
 .blockSpace {
   z-index: 1;
 
+}
+
+
+.textUP {
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 50px 0 0 0;
+  margin-top: 50px;
+  z-index: 2;
+}
+
+.textUP h1 {
+  font-family: bold;
+}
+
+.textDown {
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 25px 0 40px 0;
+
+  z-index: 2;
+
+}
+
+.textDown h1 {
+  font-family: bold;
+}
+
+
+body,
+html {
+  background-color: #F3F3F3;
+}
+
+
+.cardContainer {
+  cursor: pointer;
+}
+
+.cardContainer:hover>.svgIMG {
+  transform: translateY(-55px);
+  transition: all .4s ease-in-out;
+}
+
+/*.cardContainer:hover>.imgCards {
+   filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8); */
+
+/* z-index: 4;
+  background-image: linear-gradient(45deg, darken(#13abdb, 5%), #B10DC9); */
+
+
+
+.cardContainer:hover::before {
+  content: 'Sito Ufficiale';
+  position: absolute;
+  top: 0;
+  right: 25%;
+  left: 25%;
+  color: white;
+  position: absolute;
+  width: 147px;
+  height: 147px;
+  z-index: 2;
+  margin: 0 auto;
+  top: 50%;
+  text-align: center;
+  font-family: regular;
+  z-index: 10;
+
+}
+
+.svgIMG {
+  max-width: 130px;
+}
+
+
+
+.cardContainer:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 367px;
+  width: 367px;
+  background: rgb(18, 30, 74);
+  background: linear-gradient(127deg, rgba(18, 30, 74, 1) 0%, rgba(134, 53, 59, 1) 50%, rgba(200, 64, 72, 1) 100%);
+  opacity: 90%;
 }

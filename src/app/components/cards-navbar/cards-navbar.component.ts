@@ -1,12 +1,14 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { NavBarCards } from 'src/app/interface/interface-cards/navbar-cards-interface';
-import { NavbarCardsService } from 'src/app/navbar-cards.service';
+import { NavbarCardsService } from 'src/app/service/navbar-cards.service';
 @Component({
   selector: 'app-cards-navbar',
   templateUrl: './cards-navbar.component.html',
   styleUrls: ['./cards-navbar.component.css']
 })
 export class CardsNavbarComponent implements OnInit {
+  onOff: boolean = false;
+
   data: NavBarCards[] = [];
 
    returnApex: NavBarCards[] = [];  
@@ -24,10 +26,9 @@ export class CardsNavbarComponent implements OnInit {
    f1Data: NavBarCards[] = [];
    notizieData: NavBarCards[] = [];
    insideData: NavBarCards[] = [];
-  
 
   constructor(private cardsService: NavbarCardsService) { }
- 
+
   ngOnInit(): NavBarCards[]{
     this.returnApex = this.cardsService.getApexData();
     this.returnBattleField = this.cardsService.getBattleFieldData();
@@ -43,13 +44,20 @@ export class CardsNavbarComponent implements OnInit {
     this.insideData = this.returnInside;
     this.returnNotizie = this.cardsService.getNotizieData();
     this.notizieData = this.returnNotizie;
-    return this.battleFieldData && this.apexData && this.fifaData && this.f1Data && this.insideData && this.notizieData && this.eaData && this.data
+    this.showObj(this.notizieData,false)
+    return this.battleFieldData && this.apexData && this.fifaData && this.f1Data && this.insideData && this.notizieData && this.eaData;
  }
 
- showObj(selectedObject: NavBarCards[]){
+ showObj(selectedObject: NavBarCards[] | any, value:boolean){
   this.data = this.cardsService.addData(selectedObject);
-  this.cardsService.addData(selectedObject);
+  this.cardsService.addData(selectedObject)
+  if(value == false){
+    this.onOff = false;
+  } else this.onOff = true;
+  
 }
+
+
  
 
 

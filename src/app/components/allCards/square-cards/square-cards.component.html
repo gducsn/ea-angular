@@ -1,8 +1,12 @@
 <div class="blockSpace">
 
 
+  <div class="textUP">
+    <h1>Giochi in evidenza</h1>
+  </div>
   <div class="blockCards">
     <div class="allCards">
+
       <div class="cardContainer" *ngFor="let element of cardsSquare;">
 
         <img class="svgIMG" [src]="element.imgLogo" alt="svg log">
@@ -19,4 +23,9 @@
   <div class="flexButton">
     <input type="button" value="Ultimi giochi" class="buttonCards">
   </div>
+
+  <div class="textDown">
+    <h1>Ultime novità</h1>
+  </div>
+
 </div>

@@ -1,0 +1,19 @@
+.wrap{
+    height: 100px;
+    width: 500px;
+    position: relative;
+    top: 79px;
+  }
+.menu{
+  height: 105px;
+  width: 100%;
+  position: absolute;
+  top: 1px;
+z-index: 5;
+background-color: white;}
+
+.side{
+  position: absolute;
+  top: 100px;
+  width: 416px;
+}
