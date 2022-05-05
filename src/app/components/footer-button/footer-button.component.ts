@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Country } from 'src/app/interface/interface-cards/city';
-
+import { Country } from 'src/app/interface/interface-cards/country';
 
 @Component({
   selector: 'app-footer-button',
@@ -46,6 +45,33 @@ export class FooterButtonComponent implements OnInit {
 
 
   ]
+
+  languages: Country[] = [
+    {name: "United States"},
+    {name: "United Kingdom"},
+    {name: "Australia"},
+    {name: "France"},
+    {name: "Deutschland"},
+    {name: "Italia"},
+    {name: "Polska"},
+    {name: "Brasil"},
+    
+
+   
+    {name: "Espana"},
+    {name: "Ceska republika"},
+    {name: "Ungheria"},
+    {name: "Canada (En)"},
+    {name: "Canada(Fr)"},
+    {name: "Danmark"},
+    {name: "Suomi"},
+    {name: "Mexico"},
+    {name: "Nederland"},
+
+    {name: "Norge"},
+    {name: "Sverige"},
+  ]
+
   constructor() { 
 
   }
@@ -57,24 +83,45 @@ export class FooterButtonComponent implements OnInit {
   dynamicBtn = "";
   dynamicList = "";
 
+  selectedLanguage: any;
+  isOpen2: boolean = false;
+  dynamicBtn2 = "";
+  dynamicList2 = "";
+
   select(city: any){
     this.selectedCountry = city;
     
   }
 
-  
+  select2(language: any){
+    this.selectedLanguage = language;
+  }
 
   open(){
    if(this.isOpen === false){
      this.isOpen = true;
+     this.isOpen2 = false;
      this.dynamicBtn = "btn2";
      this.dynamicList = "list2"
 
    }else{
      this.isOpen = false;
+     this.isOpen2 = false;
      this.dynamicBtn = "btn";
    }
   }
-
-
+   
+  open2(){
+    if(this.isOpen2 === false){
+      this.isOpen2 = true;
+      this.isOpen = false;
+      this.dynamicBtn2 = "btn2";
+     this.dynamicList2 = "list2"
+ 
+    }else{
+      this.isOpen2 = false;
+      this.isOpen = false;
+      this.dynamicBtn2 = "btn";
+    }
+   }
 }

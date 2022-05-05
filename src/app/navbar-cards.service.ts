@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { NavBarCards } from './interface/interface-cards/navbar-cards-interface';
 @Injectable({
   providedIn: 'root'
 })
-export class NavbarCardsService {
+export class NavbarCardsService implements OnInit {
   private battleFieldCard: NavBarCards[] = [{
     extraClass: "defaultStyle",
     id: 0,
@@ -399,6 +399,8 @@ private fifaCards: NavBarCards[] = [ {
   textMain: 'EA SPORTS esprime tutta la propria solidaritetà nei confronti del popolo ucraino e, come tante altre voci nel mondo del calcio, lancia un appello per il ritorno della pace e la fine dell/invasione dell/Ucraina'
 }] 
   constructor() { }
+  ngOnInit(): void {
+  }
   getBattleFieldData(){
     return this.battleFieldCard;
   }
@@ -424,6 +426,8 @@ private fifaCards: NavBarCards[] = [ {
   addData(selectedObject: NavBarCards[]){
     return selectedObject;
   }
+
+  
        
 
 }

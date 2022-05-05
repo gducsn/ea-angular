@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { NavBarCards } from 'src/app/interface/interface-cards/navbar-cards-interface';
 import { NavbarCardsService } from 'src/app/navbar-cards.service';
 @Component({
@@ -24,9 +24,10 @@ export class CardsNavbarComponent implements OnInit {
    f1Data: NavBarCards[] = [];
    notizieData: NavBarCards[] = [];
    insideData: NavBarCards[] = [];
+  
 
   constructor(private cardsService: NavbarCardsService) { }
-
+ 
   ngOnInit(): NavBarCards[]{
     this.returnApex = this.cardsService.getApexData();
     this.returnBattleField = this.cardsService.getBattleFieldData();
@@ -42,15 +43,18 @@ export class CardsNavbarComponent implements OnInit {
     this.insideData = this.returnInside;
     this.returnNotizie = this.cardsService.getNotizieData();
     this.notizieData = this.returnNotizie;
-    
-    return this.battleFieldData && this.apexData && this.fifaData && this.f1Data && this.insideData && this.notizieData && this.eaData;
+    return this.battleFieldData && this.apexData && this.fifaData && this.f1Data && this.insideData && this.notizieData && this.eaData && this.data
  }
 
  showObj(selectedObject: NavBarCards[]){
   this.data = this.cardsService.addData(selectedObject);
-  this.cardsService.addData(selectedObject)
+  this.cardsService.addData(selectedObject);
 }
  
+
+
+
+
 }
 
 

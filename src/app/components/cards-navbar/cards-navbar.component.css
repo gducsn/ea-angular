@@ -48,7 +48,7 @@ a {
     align-items: center;
     position: relative;
     left: 150px;
-
+    cursor: pointer;
     
     
 }
@@ -63,6 +63,7 @@ a {
 }
 
 
+  
 
 
 /*.a-wrap:active{ 
