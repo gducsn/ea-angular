@@ -16,15 +16,26 @@ secondClass: boolean = false;
 is(){
   this.toggleClass = !this.toggleClass;
   this.secondClass = false;
+  if(this.toggleClass){
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'scroll';
+  }
 
 }
 two(){
   this.secondClass = !this.secondClass;
   this.toggleClass = false;
+  if(this.secondClass){
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'scroll';
+  }
 }
 
 close(){
-  console.log('test')
+  this.toggleClass = false;
+  this.secondClass = false;
 }
 
 

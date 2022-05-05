@@ -33,14 +33,15 @@ body {
 
 
 .naving {
-  position: fixed;
-  overflow: hidden;
+  position: sticky;
+  overflow: scroll;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
   height: 40px;
   background-color: black;
+  transition: top 0.3s;
 }
 
 .naving img {
@@ -265,4 +266,23 @@ span {
 .textWrap h1 {
   font-family: regular;
   font-size: 13px;
+}
+
+.close {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.close span {
+  color: white;
+  font-family: regular;
+  font-size: 14px;
+}
+
+.close:hover {
+  cursor: pointer;
 }

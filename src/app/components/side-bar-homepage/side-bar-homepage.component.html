@@ -1,27 +1,36 @@
+<div class="all">
 
 
-<div (click)="openDiv()" (click)="showImg(urls)"><img src=".\assets\sidebarcardsimgs\toggle.png" alt="OOOO" class="toggleIcon"></div>
+  <div (click)="openDiv()" (click)="showImg(urls)"><img src=".\assets\sidebarcardsimgs\toggle.png" alt="OOOO"
+      class="toggleIcon"></div>
 
 
-<div class="wrap" [ngClass]="onClickStyle"   *ngIf="isOpen">
-  <span (click)="closeDiv()" class="closeX"> <p>Tutti i giochi</p>    <strong>X</strong></span>
+  <div class="wrap" [ngClass]="onClickStyle" *ngIf="isOpen">
+    <span (click)="closeDiv()" class="closeX">
+      <p>Tutti i giochi</p> <strong>X</strong>
+    </span>
 
-  
 
 
-<div class="card1-container"  >
-    <div><img src="assets/sidebarcardsimgs/cardsimg.jpg" alt="" class="violetImg"></div>
-    <div><img src="assets/sidebarcardsimgs/eaplay.png" alt="" class="eaplaylogo"></div>
 
-</div>
-<div  class="microCards">
-<div  *ngFor="let url of urls" >
-    <div>
-        <img src="{{url.microCards}}" alt="" class="backgroundimg">
-        <img src="{{url.microLogo}}" alt="" class="micrologo">
+    <div class="card1-container">
+      <div><img src="assets/sidebarcardsimgs/cardsimg.jpg" alt="" class="violetImg"></div>
+      <div><img src="assets/sidebarcardsimgs/eaplay.png" alt="" class="eaplaylogo"></div>
 
     </div>
-   
+    <div class="microCards">
+      <div *ngFor="let url of urls">
+        <div>
+          <img src="{{url.microCards}}" alt="" class="backgroundimg">
+          <img src="{{url.microLogo}}" alt="" class="micrologo">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
-</div>
+
+<div [ngClass]="'blackdiv'" *ngIf="isOpen">
+
 </div>
