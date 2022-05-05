@@ -154,3 +154,7 @@ p{
   left: 27px;
   position: absolute;
 }
+
+html, body {
+  overflow: hidden;
+}

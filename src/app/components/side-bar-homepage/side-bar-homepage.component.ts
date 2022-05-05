@@ -31,11 +31,13 @@ export class SideBarHomepageComponent implements OnInit {
     if(this.isOpen){
       this.isOpen = false;
       this.onClickStyle = "slide-out-left";
+      document.body.style.overflow = 'scroll';
 
 
     }else{
       this.isOpen = true;
       this.onClickStyle = "slide-in-left";
+      document.body.style.overflow = 'hidden';
 
      
 
@@ -45,11 +47,13 @@ export class SideBarHomepageComponent implements OnInit {
   closeDiv(){
     if(this.isOpen){
       this.isOpen = false;
-      this.onClickStyle = "slide-out-left"
+      this.onClickStyle = "slide-out-left";
+      document.body.style.overflow = 'scroll';
 
     }else{
       this.isOpen = true;
       this.onClickStyle = "slide-in-left";
+      document.body.style.overflow = 'hidden';
 
     }
   }
