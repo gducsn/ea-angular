@@ -1,0 +1,138 @@
+<nav class="navMenu" [class.navBlock]="scrolled">
+
+
+  <div class="sidebar">
+    <img class="toggleclass" src="assets/menu-bar-ico/toggle.png" alt="" (click)="change()">
+  </div>
+
+
+  <!-- nav-bar interna  -->
+  <div class=" sidebarinterno" [class.visibleClass]="onOff" [class.slide-out-left]="onOff"
+    [class.slide-in-left]="onOff">
+    <div class="component">
+      <div class="textFlexComponent">
+        <h1>Tutti i Giochi</h1>
+        <h1 (click)="change()">X</h1>
+      </div>
+      <div class="imgFlexInterno">
+        <img id="imgOneInside" src="assets/sidebarcardsimgs/cardsimg.jpg" alt="">
+        <img id="imgTwoInside" src="assets/sidebarcardsimgs/eaplay.png" alt="">
+      </div>
+      <div class="flexinternocoppia">
+        <div class="imgSquareInterno">
+          <img id="imgSquareint" *ngFor="let pics of arrayOfIMG" [src]="pics" alt="">
+          <!-- <img id="imgSquareAbsolute" *ngFor="let pics2 of arrayOfIMGAbsolute" [src]="pics2" alt=""> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blackdivinsert" [class.blackdivinsertON]="onOff">
+
+  </div>
+  <!-- fine nav-bar interna -->
+
+
+
+
+
+
+
+
+  <!-- inizio menu completo -->
+  <h1 class="title" routerLink="/it-it">Electronic Arts</h1>
+
+  <!-- Giochi elements -->
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Giochi</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="dropdown-content">
+      <div class="liflex">
+        <div class="spaceUL">
+          <li class="drop-down">
+            <h1 class="h1style">ESPLORA I GIOCHI</h1>
+            <br>
+            <div class="pflex">
+              <p class="pstyle" *ngFor="let str of gamesOne">{{str}}</p>
+            </div>
+          </li>
+
+        </div>
+        <li class="drop-down">
+          <h1 class="h1style">PIATTAFORME</h1>
+          <br>
+          <div class="pflex">
+            <p class="pstyle" *ngFor="let str of gamesTwo">{{str}}</p>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <!-- fine  -->
+
+
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Altre Esperienze</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="otherContent ulFlex">
+      <li class="drop-down">
+        <div class="pflexOther">
+          <p class="pstyle" *ngFor="let str of altreEsperienze">{{str}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Informazioni</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="otherContent ulFlex">
+      <li class="drop-down">
+        <div class="pflexOther">
+          <p class="pstyle" *ngFor="let str of informazioni">{{str}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Impegni</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="otherContent ulFlex">
+      <li class="drop-down">
+        <div class="pflexOther">
+          <p class="pstyle" *ngFor="let str of impegni">{{str}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Impegni</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="otherContent ulFlex">
+      <li class="drop-down">
+        <div class="pflexOther">
+          <p class="pstyle" *ngFor="let str of risorse">{{str}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+</nav>

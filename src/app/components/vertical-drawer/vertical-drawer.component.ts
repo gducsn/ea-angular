@@ -36,6 +36,7 @@ two(){
 close(){
   this.toggleClass = false;
   this.secondClass = false;
+  document.body.style.overflow = 'scroll';
 }
 
 

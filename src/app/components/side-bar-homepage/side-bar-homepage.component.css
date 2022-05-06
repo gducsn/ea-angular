@@ -1,6 +1,6 @@
 .wrap {
-  position: fixed;
-  /* height: 100vh; */
+  position: relative;
+
   height: 1060px;
   width: 416px;
   /*border-style: solid;
@@ -12,16 +12,17 @@
   justify-content: center;
   flex-direction: column;
   margin-left: 0px;
-  position: relative;
+  /* position: relative; */
   left: -9px;
   background-color: white;
   bottom: 109px;
-  z-index: 5;
+  z-index: 4;
 }
 
 .slide-in-left {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
 }
 
 @-webkit-keyframes slide-in-left {
@@ -179,16 +180,14 @@ body {
   background-color: black;
   opacity: 80%;
   transition: .4s ease;
-  z-index: 7;
+  z-index: 3;
 }
 
+
+
+.wrap,
 .all {
-  z-index: 10;
-}
 
-.toggleIcon,
-.wrap {
-  z-index: 8;
   overflow: scroll;
 
 }
@@ -199,4 +198,11 @@ body {
   transform: scale(1.3);
   transition: .5s ease-in-out;
   filter: invert(45%) sepia(8%) saturate(5162%) hue-rotate(314deg) brightness(102%) contrast(131%);
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
