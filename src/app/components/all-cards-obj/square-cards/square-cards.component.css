@@ -47,12 +47,13 @@
 }
 
 .cardContainer {
-  height: 367px;
   box-shadow: 0px 5px 8px -1px rgba(0, 0, 0, 0.62);
   background: white;
   margin-left: 16px;
   margin-bottom: 16px;
-  width: 367px;
+  max-width: 367px;
+  max-height: 367px;
+  width: 100%;
   position: relative;
 }
 
@@ -269,4 +270,64 @@
   background: rgb(18, 30, 74);
   background: linear-gradient(127deg, rgba(18, 30, 74, 1) 0%, rgba(134, 53, 59, 1) 50%, rgba(200, 64, 72, 1) 100%);
   opacity: 90%;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .cardContainer {
+    height: 300px;
+    width: 300px;
+  }
+
+  .allCards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: #F3F3F3;
+    margin-top: 56px;
+    gap: 15px;
+    padding: 50px 0px;
+  }
+
+  .cardContainer:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+    background: rgb(18, 30, 74);
+    background: linear-gradient(127deg, rgba(18, 30, 74, 1) 0%, rgba(134, 53, 59, 1) 50%, rgba(200, 64, 72, 1) 100%);
+    opacity: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .cardContainer {
+    height: 318px;
+    width: 318px;
+  }
+
+  .allCards {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    background-color: #F3F3F3;
+    margin-top: 56px;
+    gap: 15px;
+    padding: 50px 0px;
+  }
+
+  .cardContainer:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 318px;
+    width: 318px;
+    background: rgb(18, 30, 74);
+    background: linear-gradient(127deg, rgba(18, 30, 74, 1) 0%, rgba(134, 53, 59, 1) 50%, rgba(200, 64, 72, 1) 100%);
+    opacity: 90%;
+  }
+
 }
