@@ -7,7 +7,7 @@
 .menu{
   height: 105px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 1px;
 z-index: 5;
 background-color: white;}
