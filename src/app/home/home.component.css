@@ -17,3 +17,12 @@ position: absolute;
 top: 100px;
 width: 416px;
 }
+.card-bottom {
+    width: 100%;
+    height: 710px;
+}
+
+.card-top {
+    width: 100%;
+    height: 850px;
+}

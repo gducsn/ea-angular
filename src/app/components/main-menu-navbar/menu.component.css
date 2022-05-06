@@ -41,7 +41,7 @@
 }
 
 .title {
-  margin-left: 48px;
+  margin-left: 18px;
   margin-right: 36px;
   color: #FF4747;
   font-family: regular;
@@ -112,6 +112,7 @@
   background: rgb(255, 255, 255, 0.95);
   border-radius: 5px;
   top: 45px;
+  transition: 2s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -122,6 +123,7 @@
   animation-name: scale;
   animation-duration: .3s;
   z-index: 18;
+  transition-delay: 3s;
 }
 
 .dropdown:hover .otherContent {
@@ -131,10 +133,7 @@
   animation-direction: normal;
 }
 
-.dropdown:not(:hover) .dropdown-content {
-  animation-name: unscale;
-  animation-duration: .5s;
-}
+
 
 ul {
   list-style: none;
@@ -166,6 +165,11 @@ ul {
   white-space: nowrap;
   margin-bottom: 10px;
   opacity: 90%;
+  cursor: pointer;
+}
+
+.pstyle:hover {
+  color: #FF4747;
 }
 
 .pflex {
@@ -216,24 +220,28 @@ ul {
 
 
 
+
 }
 
 @keyframes unscale {
-  100% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
+  0% {
+
+    transform: scaleY(1);
+
     opacity: 1;
   }
 
-  0% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
+  100% {
+
+    transform: scaleY(0);
+
+    opacity: 0;
   }
+}
+
+.unscale {
+  animation-name: unsclae;
+  animation-duration: 1s;
 }
 
 .drop-down,
@@ -335,13 +343,16 @@ ul {
 }
 
 
+
 #imgSquareAbsolute {
   position: absolute;
-  max-width: 160px;
-  max-height: 160px;
-  align-self: center;
+
 }
 
+.toflexI {
+  display: flex;
+  flex-direction: column;
+}
 
 .visibleClass {
   display: initial;
@@ -458,6 +469,7 @@ ul {
   transition: .9s;
 }
 
+<<<<<<< HEAD
   
 .toggle2{
   display: none;
@@ -595,3 +607,14 @@ a{
 
   
 }
+=======
+
+@media only screen and (max-width: 768px) {
+  .dropdown {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {}
+>>>>>>> ea881eaac334f86a113e7617ac06455183e92ac2
