@@ -469,145 +469,168 @@ ul {
   transition: .9s;
 }
 
-<<<<<<< HEAD
-  
-.toggle2{
+
+
+.toggle2 {
   display: none;
 }
 
-@media (max-width: 480px){
-.sidebar{
-  display: none;
-}
-.navmenu{
-  display: none;
-}
-.toggle2{
-  position: absolute;
-  left: 18px;
-  top: 57px;
-  display: inline-block;
-  z-index: 4;
-}
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
 
-.btn-flex{
-  display: none;
-}
-.wrap2{
-  width: 324px;
-  height: 842px;
-  z-index: 4;
-  position: absolute;
-  background-color: white;
-}
+  .navmenu {
+    display: none;
+  }
 
+  .toggle2 {
+    position: absolute;
+    left: 18px;
+    top: 57px;
+    display: inline-block;
+    z-index: 4;
+  }
 
-.first-sub-list, .second-sub-list, .third-list, .fourth-list, .fifth-list, .sixth-list{
-  display: flex;
-  flex-direction: column;
-}
-.first-sub-list, .second-sub-list{
-  height: 165px;
+  .btn-flex {
+    display: none;
+  }
 
-}
-a{
-  text-decoration-line: none;
-  color: #A3A3A3;
-  position: relative;
-  left: 58px;
-  top: 10px;
+  .wrap2 {
+    width: 324px;
+    height: 842px;
+    z-index: 4;
+    position: absolute;
+    background-color: white;
+  }
 
 
-  
-}
-.a2{
-  position: relative;
-  left: 80px;
-  top: 10px;
-  
-  color: black;
-}
+  .first-sub-list,
+  .second-sub-list,
+  .third-list,
+  .fourth-list,
+  .fifth-list,
+  .sixth-list {
+    display: flex;
+    flex-direction: column;
+  }
 
-.ax{
-  
-  color: black;
-}
-.a3{
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #A3A3A3;
-}
-.first-field, .third-field, .fourth-field, .fifth-field, .sixth-field{
-  width: 300px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  margin-left: 22px;
-}
-.first-sub-field{
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  width: 300px;
-  margin-left: 22px;
-  border-color: #A3A3A3;
+  .first-sub-list,
+  .second-sub-list {
+    height: 165px;
+
+  }
+
+  a {
+    text-decoration-line: none;
+    color: #A3A3A3;
+    position: relative;
+    left: 58px;
+    top: 10px;
 
 
 
-}
-.fourth-list{
-  height: 173px;
-}
-.fifth-list{
-  height: 125px;
-}
-.sixth-list{
-  height: 172px;
-}
-.p1{
-  position: relative;
-  top: 8px;
+  }
+
+  .a2 {
+    position: relative;
+    left: 80px;
+    top: 10px;
+
+    color: black;
+  }
+
+  .ax {
+
+    color: black;
+  }
+
+  .a3 {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #A3A3A3;
+  }
+
+  .first-field,
+  .third-field,
+  .fourth-field,
+  .fifth-field,
+  .sixth-field {
+    width: 300px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-left: 22px;
+  }
+
+  .first-sub-field {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: 300px;
+    margin-left: 22px;
+    border-color: #A3A3A3;
+
+
+
+  }
+
+  .fourth-list {
+    height: 173px;
+  }
+
+  .fifth-list {
+    height: 125px;
+  }
+
+  .sixth-list {
+    height: 172px;
+  }
+
+  .p1 {
+    position: relative;
+    top: 8px;
+  }
+
+  .header {
+    background-color: #F3F3F3;
+    height: 53px;
+    width: 375px;
+  }
+
+  .img1 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+
+  .img2 {
+    position: relative;
+    top: 10px;
+    left: 183px;
+  }
+
+  .p2 {
+    position: relative;
+    left: 37px;
+    top: 10px;
+    color: #A3A3A3;
+
+  }
+
+  .p3 {
+    position: relative;
+    left: 58px;
+    top: 10px;
+    color: #A3A3A3;
+
+  }
+
+  .third-list {
+    height: 110px;
+  }
+
+
 }
 
-.header{
- background-color: #F3F3F3;
- height: 53px;
- width: 375px;
-}
-
-.img1{
-  position: relative;
-  top: 10px;
-  left: 10px;
-}
-
-.img2{
-  position: relative;
-  top: 10px;
-  left: 183px;
-}
-
-.p2{
-  position: relative;
-  left: 37px;
-  top: 10px;
-  color: #A3A3A3;
-  
-}
-
-.p3{
-  position: relative;
-  left: 58px;
-  top: 10px;
-  color: #A3A3A3;
-
-}
-
-.third-list{
-  height: 110px;
-}
-
-  
-}
-=======
 
 @media only screen and (max-width: 768px) {
   .dropdown {
@@ -617,4 +640,3 @@ a{
 }
 
 @media only screen and (max-width: 500px) {}
->>>>>>> ea881eaac334f86a113e7617ac06455183e92ac2
