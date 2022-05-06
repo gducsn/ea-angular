@@ -18,6 +18,7 @@
   object-fit: fill;
   top: 0;
   position: absolute;
+  z-index: -1;
 }
 
 #imgTwo {
@@ -67,4 +68,17 @@
   transition-duration: 0.1s;
   transition-property: opacity;
   transition-timing-function: ease;
+}
+
+.stick {
+  position: absolute;
+  overflow: scroll;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: black;
+  transition: top 0.3s;
+
 }

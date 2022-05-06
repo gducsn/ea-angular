@@ -1,0 +1,223 @@
+<nav class="navMenu" [class.navBlock]="scrolled">
+
+
+  <div class="sidebar">
+    <img class="toggleclass" src="assets/menu-bar-ico/toggle.png" alt="" (click)="change()">
+  </div>
+
+
+  <!-- nav-bar interna  -->
+  <div class=" sidebarinterno" [class.visibleClass]="onOff" [class.slide-out-left]="onOff"
+    [class.slide-in-left]="onOff">
+    <div class="component">
+      <div class="textFlexComponent">
+        <h1>Tutti i Giochi</h1>
+        <h1 (click)="change()">X</h1>
+      </div>
+      <div class="imgFlexInterno">
+        <img id="imgOneInside" src="assets/sidebarcardsimgs/cardsimg.jpg" alt="">
+        <img id="imgTwoInside" src="assets/sidebarcardsimgs/eaplay.png" alt="">
+      </div>
+      <div class="flexinternocoppia">
+        <div class="imgSquareInterno">
+          <img id="imgSquareint" *ngFor="let pics of arrayOfIMG" [src]="pics" alt="">
+          <!-- <img id="imgSquareAbsolute" *ngFor="let pics2 of arrayOfIMGAbsolute" [src]="pics2" alt=""> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blackdivinsert" [class.blackdivinsertON]="onOff">
+
+  </div>
+  <!-- fine nav-bar interna -->
+
+
+
+
+
+
+
+
+  <!-- inizio menu completo -->
+  <h1 class="title" routerLink="/it-it">Electronic Arts</h1>
+
+  <!-- Giochi elements -->
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Giochi</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="dropdown-content">
+      <div class="liflex">
+        <div class="spaceUL">
+          <li class="drop-down">
+            <h1 class="h1style">ESPLORA I GIOCHI</h1>
+            <br>
+            <div class="pflex">
+              <p class="pstyle" *ngFor="let str of gamesOne">{{str}}</p>
+            </div>
+          </li>
+
+        </div>
+        <li class="drop-down">
+          <h1 class="h1style">PIATTAFORME</h1>
+          <br>
+          <div class="pflex">
+            <p class="pstyle" *ngFor="let str of gamesTwo">{{str}}</p>
+          </div>
+        </li>
+      </div>
+    </ul>
+  </div>
+  <!-- fine  -->
+
+
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Altre Esperienze</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="otherContent ulFlex">
+      <li class="drop-down">
+        <div class="pflexOther">
+          <p class="pstyle" *ngFor="let str of altreEsperienze">{{str}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Informazioni</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="otherContent ulFlex">
+      <li class="drop-down">
+        <div class="pflexOther">
+          <p class="pstyle" *ngFor="let str of informazioni">{{str}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Impegni</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="otherContent ulFlex">
+      <li class="drop-down">
+        <div class="pflexOther">
+          <p class="pstyle" *ngFor="let str of impegni">{{str}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dropdown">
+    <div class="btn-flex">
+      <button class="dropbtn btn-title">Impegni</button>
+      <img src="assets/menu-bar-ico/arrow.png" class="arrow">
+    </div>
+    <ul class="otherContent ulFlex">
+      <li class="drop-down">
+        <div class="pflexOther">
+          <p class="pstyle" *ngFor="let str of risorse">{{str}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+</nav>
+
+
+<!--Responsive side-bar-->
+<!--SIDE RESPONSIVE-->
+
+<div class="toggle2" (click)="openSideBar()" id="hide">X</div>
+<div class="wrap2" *ngIf="sideIsOpen" [ngClass]="anim">
+    <div class="header logo">
+        <img src="assets/logo-responsive.png" alt="" class="img1">
+        <img src="assets/toggle-resp-close.png" alt="" class="img2" (click)="openSideBar()">
+    </div>
+
+     <div class="first-field" (click)="openSubSection()"><p class="p1">Giochi</p></div>
+     <div class="first-sub-field" *ngIf="firstSubIsOpen" (click)="openFirstSubList()">
+         <p class="p2">ESPLORA I GIOCHI</p>
+         <div class="first-sub-list" *ngIf="firstSubListIsOpen" >
+
+            <a href="" class="ax">Ultimi giochi</a>
+            <a href="" class="ax">Prossimamente</a>
+            <a href=""class="ax">EA SPORTy
+                S</a>
+            <a href="" class="ax">Giochi gratuiti</a>
+            <a href="" class="ax">Libreria dei giochi</a>
+   
+        </div>
+        </div>
+    
+     <div class="second-sub-field" *ngIf="firstSubIsOpen" (click)="openSecondSubList()"><p class="p3">PIATTAFORME</p>
+        <div class="second-sub-list" *ngIf="secondSubListIsOpen">
+            <a href="" class="a2">PC</a>
+            <a href="" class="a2">Playstation</a>
+            <a href="" class="a2">Xbox Series X</a>
+            <a href="" class="a2">Nintendo Switch</a>
+            <a href="" class="a2">Cellulari</a>
+         </div>
+    </div>
+     
+    <div class="third-field" (click)="openThirdList()">
+        <p class="p1">Altre esperienze</p>
+        <div class="third-list" *ngIf="thirdListIsOpen">
+            <a href=""  class="a3">EA Play</a>
+            <a href="" class="a3">Origin</a>
+            <a href="" class="a3">Competizioni videoludiche</a>
+            <a href="" class="a3">Diretta di EA Play</a>
+         </div>
+    </div>
+  
+    <div class="fourth-field" (click)="openFourthList()">
+        <p class="p1">Informazioni</p>
+        <div class="fourth-list" *ngIf="fourthListIsOpen">
+            <a href="">Società</a>
+            <a href="">EA Studi</a>
+            <a href="">Lavora con noi</a>
+            <a href="">La nostra tecnologia</a>
+            <a href="">EA Partners</a>
+            <a href="">Notizie</a>
+            <a href="">Inside EA</a>
+         </div>
+    </div>
+
+    <div class="fifth-field" (click)="openFifthList()">
+        <p class="p1">Impegni</p>
+        <div class="fifth-list" *ngIf="fifthListIsOpen">
+            <a href="">Gioco positivo</a>
+            <a href="">Diversità e inclusione</a>
+            <a href="">Investire nella comunità</a>
+            <a href="">Persone e cultura</a>
+            <a href="">Ambiente</a>
+            
+         </div>
+    </div>
+
+    <div class="sixth-field" (click)="openSixthList()">
+        <p class="p1">Risorse</p>
+        <div class="sixth-list" *ngIf="sixthListIsOpen">
+            <a href="">Aiuto</a>
+            <a href="">Forum</a>
+            <a href="">Filtro famiglia</a>
+            <a href="">Accessibilità</a>
+            <a href="">Stampa</a>
+            <a href="">Investitori</a>
+            <a href="">Test di gioco</a>
+         </div>
+    </div>
+</div>

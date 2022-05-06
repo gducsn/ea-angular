@@ -1,14 +1,10 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-}
-
-* {
   z-index: 9;
 }
+
 
 @font-face {
   font-family: "bold";
@@ -33,14 +29,16 @@ body {
 
 
 .naving {
-  position: fixed;
-  overflow: hidden;
+  position: static;
+  overflow: scroll;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
   height: 40px;
   background-color: black;
+  transition: top 0.3s;
+  z-index: 9;
 }
 
 .naving img {
@@ -243,6 +241,7 @@ span {
 .wrap02 {
   transition: all .5s ease-in-out;
   z-index: 10;
+
 }
 
 .wrap02 div {
@@ -265,4 +264,28 @@ span {
 .textWrap h1 {
   font-family: regular;
   font-size: 13px;
+}
+
+.close {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.close span {
+  color: white;
+  font-family: regular;
+  font-size: 14px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+
+.c1 img {
+  margin-top: 20px;
 }

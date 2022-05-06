@@ -14,6 +14,19 @@ export class SideBarHomepageComponent implements OnInit {
   returnUrls: Urls[] = [];
   urls: Urls[] = [];
 
+
+  //RESPONSIVE
+  firstSubIsOpen: boolean = false;
+  firstSubListIsOpen: boolean = false;
+  secondSubListIsOpen: boolean = false;
+  thirdListIsOpen: boolean = false;
+
+  fourthListIsOpen: boolean = false;
+  fifthListIsOpen: boolean = false;
+  sixthListIsOpen: boolean = false;
+
+  sideIsOpen: boolean = false;
+
   constructor(private homepageSidebar: SideBarUrlsService) { }
 
   ngOnInit(): Urls[] {
@@ -55,6 +68,79 @@ export class SideBarHomepageComponent implements OnInit {
       this.onClickStyle = "slide-in-left";
       document.body.style.overflow = 'hidden';
 
+    }
+  }
+
+
+
+
+  //RESPONSIVE
+
+  openSubSection(){
+    if(!this.firstSubIsOpen){
+      this.firstSubIsOpen = true;
+    }else{
+      this.firstSubIsOpen = false;
+    }
+  }
+
+  openFirstSubList(){
+    if(!this.firstSubListIsOpen){
+      this.firstSubListIsOpen = true;
+    }else{
+      this.firstSubListIsOpen = false;
+    }
+  }
+
+  openSecondSubList(){
+    if(!this.secondSubListIsOpen){
+      this.secondSubListIsOpen = true;
+    }else{
+      this.secondSubListIsOpen = false;
+    }
+  }
+  
+
+  openThirdList(){
+    if(!this.thirdListIsOpen){
+      this.thirdListIsOpen = true;
+    }else{
+      this.thirdListIsOpen = false;
+    }
+  }
+  
+  openFourthList(){
+    if(!this.fourthListIsOpen){
+      this.fourthListIsOpen = true;
+    }else{
+      this.fourthListIsOpen = false;
+    }
+  }
+
+  openFifthList(){
+    if(!this.fifthListIsOpen){
+      this.fifthListIsOpen = true;
+    }else{
+      this.fifthListIsOpen = false;
+    }
+  }
+
+  openSixthList(){
+    if(!this.sixthListIsOpen){
+      this.sixthListIsOpen = true;
+    }else{
+      this.sixthListIsOpen = false;
+    }
+  }
+
+
+
+  openSideBar(){
+    if(!this.sideIsOpen){
+      this.sideIsOpen = true;
+    }
+    else{
+      this.sideIsOpen = false;
     }
   }
 }

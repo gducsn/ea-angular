@@ -3,12 +3,15 @@
     <div class="flex">
       <img src="/assets/vertical-drawer-img/user.png" alt="usericom" (click)="is()">
       <img src="/assets/vertical-drawer-img/question.png" alt="questionincon" (click)="two()">
-      <img src="/assets/vertical-drawer-img/ealogo.png" alt="ealogo">
+      <img src="/assets/vertical-drawer-img/ealogo.png" alt="ealogo" routerLink="/it-it">
     </div>
   </div>
 </div>
 
 <div class="inv userFlex" [class.adding]='toggleClass'>
+  <div class="close">
+    <span (click)="close()">X</span>
+  </div>
   <div class="userCont">
     <div class="log">
       <img src="/assets/vertical-drawer-img/log.png" alt="">
@@ -19,10 +22,14 @@
       <h1>Crea account </h1>
     </div>
   </div>
+
 </div>
 
 
 <div class="inv2 " [class.wrap02]='secondClass'>
+  <div class="close">
+    <span (click)="close()">X</span>
+  </div>
   <div class="selfAlign">
     <h1>
       Ti serve aiuto?
