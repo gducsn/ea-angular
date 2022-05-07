@@ -1,4 +1,4 @@
-<div class="wrap">
+<!-- <div class="wrap">
   <div class="a-wrap one"> <a id="one" (click)="showObj(notizieData,false)">Notizie EA</a></div>
   <div class="a-wrap two"> <a (click)="showObj(eaData,false)">EA Play</a></div>
   <div class="a-wrap one"> <a (click)="showObj('',true)">Madden NFL</a></div>
@@ -9,5 +9,56 @@
   <div class="a-wrap seven"> <a (click)="showObj(f1Data,false)">F1</a></div>
   <div class="a-wrap height"> <a (click)="showObj(insideData,false)">Inside EA</a></div>
 </div>
+ -->
+
+
+
+<nav>
+
+  <div class="arrowpadleft">
+    <img class="arrowright" src="assets/cards-navbar/arrow.png" alt="" (click)="scrollLeft()"
+      [class.arrowrightDisplay]="arrowrightDisplay">
+  </div>
+
+  <ol #element>
+    <li>
+      <button class="" type="submit" (click)="showObj(notizieData,false)">Notizie
+        EA</button>
+    </li>
+    <li>
+      <button (click)="showObj(eaData,false) ">EA
+        Play</button>
+    </li>
+    <li>
+      <button type="submit" (click)="showObj('',true)">Madden NFL</button>
+    </li>
+    <li>
+      <button type="submit" (click)="showObj(apexData,false)">Apex Legends</button>
+    </li>
+    <li>
+      <button type="submit" (click)="showObj(fifaData,false)">FIFA</button>
+    </li>
+    <li>
+      <button type="submit" (click)="showObj(battleFieldData,false)">Battlefield</button>
+    </li>
+    <li>
+      <button type="submit" (click)="showObj('',true)">The Sims 4</button>
+    </li>
+    <li>
+      <button type="submit" (click)="showObj(f1Data,false)">F1</button>
+    </li>
+    <li>
+      <button type="submit" (click)="showObj(insideData,false)">Inside EA</button>
+    </li>
+  </ol>
+  <div class="arrowpadright">
+    <img class="arrowleft" [class.arrowDisplay]="arrowDisplay" src="assets/cards-navbar/arrow.png" alt=""
+      (click)="scrollRight()">
+  </div>
+
+</nav>
+
+
+
 
 <app-navbarcards [class.delete]="onOff" [data]="data"></app-navbarcards>

@@ -58,6 +58,39 @@ export class CardsNavbarComponent implements OnInit {
 }
 
 
+
+// change
+
+arrowrightDisplay = false;
+arrowDisplay = false;
+  
+@ViewChild('element') element!: ElementRef;
+@ViewChild('button') button!: ElementRef;
+
+scrollRight(){
+  this.element.nativeElement.scrollTo({ left: (this.element.nativeElement.scrollLeft + 150), behavior: 'smooth' });
+  this.arrowrightDisplay = true;
+  if (this.element.nativeElement.scrollLeft > 150) {
+    this.arrowrightDisplay = true;
+  }
+} 
+
+scrollLeft(): void {
+  this.element.nativeElement.scrollTo({ left: (this.element.nativeElement.scrollLeft - 150), behavior: 'smooth' });
+  if(this.element.nativeElement.scrollLeft <= 150){
+    this.arrowrightDisplay = false;
+  }
+  
+}
+
+/*checkButton() {
+  if(this.button.nativeElement.className.length == 0){
+    this.button.nativeElement.className = 'organgeBottom';
+  }
+
+}*/
+
+
  
 
 

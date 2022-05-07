@@ -631,6 +631,12 @@ ul {
 
 }
 
+@media only screen and (max-width: 1000px) {
+  .dropdown {
+    display: none;
+  }
+
+}
 
 @media only screen and (max-width: 768px) {
   .dropdown {
