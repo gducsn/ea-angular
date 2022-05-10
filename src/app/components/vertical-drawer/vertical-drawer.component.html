@@ -1,34 +1,34 @@
 <div class="naving">
   <div class="wrap00">
     <div class="flex">
-      <img src="/assets/vertical-drawer-img/user.png" alt="usericom" (click)="is()">
-      <img src="/assets/vertical-drawer-img/question.png" alt="questionincon" (click)="two()">
+      <img src="/assets/vertical-drawer-img/user.png" alt="usericom" (click)="firstMenu()">
+      <img src="/assets/vertical-drawer-img/question.png" alt="questionincon" (click)="secondMenu()">
       <img src="/assets/vertical-drawer-img/ealogo.png" alt="ealogo" routerLink="/it-it">
     </div>
   </div>
 </div>
 
-<div class="inv userFlex" [class.adding]='toggleClass'>
+<div class="inv userFlex" [class.adding]='firstClassSwitch'>
   <div class="close">
-    <span (click)="close()">X</span>
+    <span (click)="closeMenu()">X</span>
   </div>
   <div class="userCont">
     <div class="log">
       <img src="/assets/vertical-drawer-img/log.png" alt="">
       <h1> Accedi </h1>
     </div>
-    <div class="reg">
+    <div class="reg" routerLink="/signin">
       <img src="/assets/vertical-drawer-img/reg.png" alt="">
-      <h1 routerLink="/signin">Crea account </h1>
+      <h1 (click)="closeMenu()">Crea account </h1>
     </div>
   </div>
 
 </div>
 
 
-<div class="inv2 " [class.wrap02]='secondClass'>
+<div class="inv2 " [class.wrap02]='secondClassSwitch'>
   <div class="close">
-    <span (click)="close()">X</span>
+    <span (click)="closeMenu()">X</span>
   </div>
   <div class="selfAlign">
     <h1>

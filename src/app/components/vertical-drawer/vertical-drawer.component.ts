@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VerticalDrawerService } from 'src/app/service/vertical-drawer.service';
 
 @Component({
   selector: 'app-vertical-drawer',
@@ -6,38 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vertical-drawer.component.css']
 })
 export class VerticalDrawerComponent implements OnInit {
-toggleClass: boolean = false;
-secondClass: boolean = false;
-  constructor() { }
+  constructor(private vertical: VerticalDrawerService) { }
 
-  ngOnInit(): void {
-    
-  }
-is(){
-  this.toggleClass = !this.toggleClass;
-  this.secondClass = false;
-  if(this.toggleClass){
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.overflow = 'scroll';
-  }
+
+firstClassSwitch!:boolean;
+secondClassSwitch!:boolean;
+
+firstMenu(){
+  return this.vertical.firstMenu();
 
 }
-two(){
-  this.secondClass = !this.secondClass;
-  this.toggleClass = false;
-  if(this.secondClass){
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.overflow = 'scroll';
-  }
+secondMenu(){
+  return this.vertical.secondMenu()
 }
 
-close(){
-  this.toggleClass = false;
-  this.secondClass = false;
-  document.body.style.overflow = 'scroll';
+closeMenu(){
+  return this.vertical.closeMenu()
 }
 
+
+ngOnInit() {
+  this.vertical.returnFirst().subscribe(x => this.firstClassSwitch = x)
+  this.vertical.returnSecond().subscribe(x => this.secondClassSwitch = x)
+}
 
 }
