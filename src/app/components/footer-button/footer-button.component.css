@@ -8,7 +8,7 @@
     border-color: #c2c2c2;
   color: black;
   position: relative;
-  left: 93px;
+  left: 400px;
   bottom: -41px;
  
 
@@ -23,10 +23,12 @@
   border-style: solid;
   color: black;
   position: relative;
-  left: 1180px;
+  left: 1500px;
   bottom: 18px;
 
 }
+
+
 .mega-container{
   display: flex;
 }
@@ -54,7 +56,7 @@
   position: absolute;
   top: -411px;
   z-index: 7;
-  right: -123px;
+  right: -425px;
 }
 .countryList2{
   height: 453px;
@@ -70,7 +72,7 @@
   position: absolute;
   top: -469px;
   z-index: 7;
-  left: 773px;
+  left: 1108px;
 }
 .container, .container2 {
   width: 190px;

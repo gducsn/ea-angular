@@ -68,6 +68,8 @@ img{
 .logo{
     height: 64px;
     height: 64px;
+    position: relative;
+    left: 146px;
 }
 
 .a1{
@@ -83,18 +85,18 @@ font-size: 18px;
 
 .secondrow{
  position: relative;    
- left: 270px;
+ left: -12px;
   bottom: 61px;
 }
 .firstrow{
     position: relative;
-    left: 200px;
+    left: -4px;
    margin-top: 40px;
 }
 
 .eainfo{
     position: relative;
-    left: 270px;
+    left: -6px;
     bottom: 50px;
     font-size: 12px;
 }
@@ -108,3 +110,8 @@ font-size: 18px;
     position: relative;
     left: 379px;
 }
+
+.x3{
+    position: relative;
+    left: 164px;
+  }
