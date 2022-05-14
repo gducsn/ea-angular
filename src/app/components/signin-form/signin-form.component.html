@@ -1,0 +1,89 @@
+<div class="main-container">
+  <!-- inizio head section -->
+
+
+
+  <div class="flex-container">
+    <div class="head-section">
+      <img src="/assets/account-img/ealogo.png" alt="logoea">
+      <h1>Crea un account EA</h1>
+      <h4>Basterà seguire pochi passaggi per completare il tuo account EA (è veloce, promesso).</h4>
+      <span class="head-logo-span">
+        <img src="/assets/account-img/google.jpeg" alt="google">
+        <img src="/assets/account-img/fb.png" alt="fb">
+        <img src="/assets/account-img/apple.png" alt="apple">
+        <img src="/assets/account-img/steam.png" alt="steam">
+        <img src="/assets/account-img/xbox.png" alt="xbox">
+        <img src="/assets/account-img/ps.jpeg" alt="play">
+      </span>
+      <div class="head-section-line">
+        <div class="head-line"></div>
+        <div class="head-line-p">o</div>
+        <div class="head-line"></div>
+      </div>
+
+    </div>
+
+    <!--  fine head section -->
+
+    <!-- inzio mid section -->
+    <div>
+      <form class="mid-section" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <label for="country" class="mid-section-country-form">PAESE/REGIONE</label>
+        <select class="mid-country-select" name="country" id="country" formControlName="paese">
+          <option value="">Italia</option>
+          <option *ngFor="let paese of countries">
+            {{paese}}
+          </option>
+        </select>
+        <label class="mid-section-data-form" for="datadinascita">DATA DI NASCITA</label>
+
+
+        <div class="mid-section-date">
+
+          <div class="mid-section-giorno">
+            <select class="mid-giorno-select" name="giorno" id="giorno" formControlName="data">
+              <option value="">Giorno</option>
+              <option *ngFor="let days of giorno">
+                {{days}}
+              </option>
+            </select>
+          </div>
+
+          <div class="mid-section-mese">
+            <select class="mid-mese-select" name="country" id="country" formControlName="mesi">
+              <option value="">Mese</option>
+              <option *ngFor="let mese of mese">
+                {{mese}}
+              </option>
+            </select>
+          </div>
+
+          <div class="mid-section-anno">
+            <select class="mid-anno-select" name="country" id="country" formControlName="anni">
+              <option value="">Anno</option>
+              <option *ngFor="let anno of anno">
+                {{anno}}
+              </option>
+            </select>
+          </div>
+
+        </div>
+
+        <button class="mid-section-button" type="submit" [disabled]="!contactForm.valid"
+          [ngClass]="{'form-not-valid' : !contactForm.valid}"
+          [class.mid-section-button-hover]="contactForm.valid">AVANTI</button>
+
+      </form>
+    </div>
+
+    <!-- fine mid section -->
+
+  </div>
+  <div class="last-section">
+    <h3>Hai già un account? <span class="last-link-hover">Accedi</span></h3>
+    <h3> <span class="last-link-hover">Vuoi creare un account EA per tuo figlio?</span> <span
+        class="last-section-span-img"><img src="/assets/account-img/sv.png" alt=""></span></h3>
+  </div>
+
+</div>

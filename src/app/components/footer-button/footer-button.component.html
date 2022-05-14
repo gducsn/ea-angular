@@ -1,46 +1,44 @@
-
-
-
 <div class="wrap">
 
-<div class="container">
+  <div class="container">
     <div *ngIf="isOpen" class="countryList">
-    <div *ngFor="let city of country" class="dynamic">
-        
-        <a href="#" (click)="select(city)" class="a" >{{city.name}}</a>
-        </div>
+      <div *ngFor="let city of country" class="dynamic">
+
+        <a (click)="select(city)" class="a">{{city.name}}</a>
+      </div>
     </div>
     <button (click)="open()" class="btn">
-    <p class="x">Prezzi regionali</p>
-    <p *ngIf="selectedCountry" class="selectedCountry1">{{selectedCountry.name}}</p>
-   <div><p *ngIf="!selectedCountry" class="selectedCountry">Italia </p> <img *ngIf="!isOpen" src="assets/icons/arrow2.jpg" alt="" class="ico">
-    <img *ngIf="isOpen" src="assets/icons/arrow1.jpg" alt="" class="ico">
-    </div>
+      <p class="x">Prezzi regionali</p>
+      <p *ngIf="selectedCountry" class="selectedCountry1">{{selectedCountry.name}}</p>
+      <div>
+        <p *ngIf="!selectedCountry" class="selectedCountry">Italia </p> <img *ngIf="!isOpen"
+          src="assets/icons/arrow2.jpg" alt="" class="ico">
+        <img *ngIf="isOpen" src="assets/icons/arrow1.jpg" alt="" class="ico">
+      </div>
     </button>
-</div>
+  </div>
 
 </div>
 
 
 <div class="wrap2">
 
-    <div class="container2">
-        <div *ngIf="isOpen2" class="countryList2">
-        <div *ngFor="let language of languages" class="dynamic2">
-            
-            <a href="#" (click)="select2(language)" class="a2" >{{language.name}}</a>
-            </div>
-        </div>
-        <button (click)="open2()" class="btn2">
-        <p class="x2">Lingua</p>
-        <p *ngIf="selectedLanguage" class="selectedCountry12">{{selectedLanguage.name}}</p>
-       <div><p *ngIf="!selectedLanguage" class="selectedCountry2">Italia </p> <img *ngIf="!isOpen2" src="assets/icons/arrow2.jpg" alt="" class="ico">
+  <div class="container2">
+    <div *ngIf="isOpen2" class="countryList2">
+      <div *ngFor="let language of languages" class="dynamic2">
+
+        <a (click)="select2(language)" class="a2">{{language.name}}</a>
+      </div>
+    </div>
+    <button (click)="open2()" class="btn2">
+      <p class="x2">Lingua</p>
+      <p *ngIf="selectedLanguage" class="selectedCountry12">{{selectedLanguage.name}}</p>
+      <div>
+        <p *ngIf="!selectedLanguage" class="selectedCountry2">Italia </p> <img *ngIf="!isOpen2"
+          src="assets/icons/arrow2.jpg" alt="" class="ico">
         <img *ngIf="isOpen2" src="assets/icons/arrow1.jpg" alt="" class="ico2">
-        </div>
-        </button>
-    </div>
-    
-    </div>
-    
+      </div>
+    </button>
+  </div>
 
-
+</div>

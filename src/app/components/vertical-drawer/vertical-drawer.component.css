@@ -289,3 +289,23 @@ span {
 .c1 img {
   margin-top: 20px;
 }
+
+.userCont h1 {
+  font-family: ligth;
+}
+
+.log:hover,
+.reg:hover {
+  transform: translateY(-10px);
+  transition: .3s;
+  cursor: pointer;
+}
+
+.imgWrap h1 {
+  font-family: ligth;
+
+}
+
+.imgWrap2 h1 {
+  font-family: ligth;
+}
