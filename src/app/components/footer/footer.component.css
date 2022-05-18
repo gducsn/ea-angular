@@ -115,3 +115,56 @@ font-size: 18px;
     position: relative;
     left: 164px;
   }
+
+
+.wrap-res{
+    display: none;
+}
+  @media only screen and (max-width: 500px) {
+      .wrap1, .wrap2{
+          display: none;
+      }
+      .wrap-res{
+          display: flex;
+          flex-direction: column;
+          width: 435px;
+          height: 368px;
+          background-color: black;
+      }
+      .first{
+          background-color: #EAEAEA;
+          width: 435px;
+          height: 368px;
+          display: flex;
+          flex-wrap: wrap;
+          
+      }
+      .second-link{
+          position: relative;
+          bottom: 44px;
+      }
+      .third-link{
+        position: relative;
+        bottom: 83px;
+    }
+
+    .a3{
+        position: relative;
+        bottom: 168px;
+        left: 168px;
+    }
+    .a2{
+        position:relative;
+        right: 44px;
+    }
+
+    .first-link{
+        margin-top: 25px;
+    }
+    
+    .fourth-link{
+        position: relative;
+        left: -231px;
+        bottom: 100px;
+    }
+}
