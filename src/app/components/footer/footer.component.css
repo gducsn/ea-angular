@@ -1,170 +1,212 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-.wrap1{
-    height: 218px;
-    background-color: #EAEAEA;
-    display: flex;
-    justify-content: center;
+.wrap1 {
+  height: 218px;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
 }
 
-.colsx{
-    display: flex;
-    width: 70%;
-    flex-direction: column;
-    margin-top: 30px;
+.colsx {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  margin-top: 30px;
 }
-.coldx{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 37px;
-    left: -111px;
+
+.coldx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 37px;
+  left: -111px;
 }
-.one{
-    display: flex;
+
+.one {
+  display: flex;
 
 }
-.two{
-    display: flex;
+
+.two {
+  display: flex;
 }
 
 a {
-    margin-left: 61px;
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
-    font-size: 16px;
+  margin-left: 61px;
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
-a:hover{
-    color: #FE6172;
-}
-img{
-    margin-left: 10px;
-}
-.ico1:hover{
-    transform: scale(1.5);
-    height: 20px
-}
-.ico2:hover{
-    transform: scale(1.5);
-    height: 20px
-}
-.ico3:hover{
-    transform: scale(1.5);
-    height: 20px
-}
-.ico4:hover{
-    transform: scale(1.5);
-    height: 20px
-}
-.ico5:hover{
-    transform: scale(1.5);
-    height: 20px
+a:hover {
+  color: #FE6172;
 }
 
-.logo{
-    height: 64px;
-    height: 64px;
-    position: relative;
-    left: 146px;
+img {
+  margin-left: 10px;
 }
 
-.a1{
-    font-family: 'Oswald', sans-serif;
-font-size: 18px;
+.ico1:hover {
+  transform: scale(1.5);
+  height: 20px
+}
+
+.ico2:hover {
+  transform: scale(1.5);
+  height: 20px
+}
+
+.ico3:hover {
+  transform: scale(1.5);
+  height: 20px
+}
+
+.ico4:hover {
+  transform: scale(1.5);
+  height: 20px
+}
+
+.ico5:hover {
+  transform: scale(1.5);
+  height: 20px
+}
+
+.logo {
+  height: 64px;
+  height: 64px;
+  position: relative;
+  left: 146px;
+}
+
+.a1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
 
 }
 
-.a2{
-    position: relative;
-    right: 10px;
+.a2 {
+  position: relative;
+  right: 10px;
 }
 
-.secondrow{
- position: relative;    
- left: -12px;
+.secondrow {
+  position: relative;
+  left: -12px;
   bottom: 61px;
 }
-.firstrow{
-    position: relative;
-    left: -4px;
-   margin-top: 40px;
+
+.firstrow {
+  position: relative;
+  left: -4px;
+  margin-top: 40px;
 }
 
-.eainfo{
-    position: relative;
-    left: -6px;
-    bottom: 50px;
-    font-size: 12px;
+.eainfo {
+  position: relative;
+  left: -6px;
+  bottom: 50px;
+  font-size: 12px;
 }
 
-.copylink{
-   position: relative;
-   top: 10px;
+.copylink {
+  position: relative;
+  top: 10px;
 }
 
-.trust{
-    position: relative;
-    left: 379px;
+.trust {
+  position: relative;
+  left: 379px;
 }
 
-.x3{
+.x3 {
+  position: relative;
+  left: 164px;
+}
+
+
+.wrap-res {
+  display: none;
+}
+
+/* 
+@media only screen and (max-width: 500px) {
+
+  .wrap1,
+  .wrap2 {
+    display: none;
+  }
+
+  .wrap-res {
+    display: flex;
+    flex-direction: column;
+    width: 435px;
+    height: 368px;
+    background-color: black;
+  }
+
+  .first {
+    background-color: #EAEAEA;
+    width: 435px;
+    height: 368px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .second-link {
     position: relative;
-    left: 164px;
+    bottom: 44px;
+  }
+
+  .third-link {
+    position: relative;
+    bottom: 83px;
+  }
+
+  .a3 {
+    position: relative;
+    bottom: 168px;
+    left: 168px;
+  }
+
+  .a2 {
+    position: relative;
+    right: 44px;
+  }
+
+  .first-link {
+    margin-top: 25px;
+  }
+
+  .fourth-link {
+    position: relative;
+    left: -231px;
+    bottom: 100px;
+  }
+} */
+
+
+
+@media only screen and (max-width: 1000px) {}
+
+
+@media only screen and (max-width: 768px) {
+
+  .wrap1,
+  .wrap2 {
+    width: 100vw;
   }
 
 
-.wrap-res{
-    display: none;
+
 }
-  @media only screen and (max-width: 500px) {
-      .wrap1, .wrap2{
-          display: none;
-      }
-      .wrap-res{
-          display: flex;
-          flex-direction: column;
-          width: 435px;
-          height: 368px;
-          background-color: black;
-      }
-      .first{
-          background-color: #EAEAEA;
-          width: 435px;
-          height: 368px;
-          display: flex;
-          flex-wrap: wrap;
-          
-      }
-      .second-link{
-          position: relative;
-          bottom: 44px;
-      }
-      .third-link{
-        position: relative;
-        bottom: 83px;
-    }
 
-    .a3{
-        position: relative;
-        bottom: 168px;
-        left: 168px;
-    }
-    .a2{
-        position:relative;
-        right: 44px;
-    }
+@media only screen and (max-width: 500px) {}
 
-    .first-link{
-        margin-top: 25px;
-    }
-    
-    .fourth-link{
-        position: relative;
-        left: -231px;
-        bottom: 100px;
-    }
+
+.all_wrap {
+  position: relative;
 }

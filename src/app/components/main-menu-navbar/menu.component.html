@@ -44,6 +44,7 @@
 
   <!-- Giochi elements -->
   <div class="dropdown">
+
     <div class="btn-flex">
       <button class="dropbtn btn-title">Giochi</button>
       <img src="assets/menu-bar-ico/arrow.png" class="arrow">
@@ -141,84 +142,87 @@
 <!--Responsive side-bar-->
 <!--SIDE RESPONSIVE-->
 
-
-<div class="toggle2" (click)="openSideBar()" id="hide"><img  src="assets/menu-bar-ico/toggle.png" alt="" ></div>
+<!-- 
+<div class="toggle2" (click)="openSideBar()" id="hide"><img src="assets/menu-bar-ico/toggle.png" alt=""></div>
 <div class="wrap2" *ngIf="sideIsOpen" [ngClass]="anim">
-    <div class="header logo">
-      <h1 class="title" routerLink="/it-it">Electronic Arts</h1>
-        <img src="assets/toggle-resp-close.png" alt="g" class="img2" (click)="openSideBar()">
-    </div>
+  <div class="header logo">
+    <h1 class="title" routerLink="/it-it">Electronic Arts</h1>
+    <img src="assets/toggle-resp-close.png" alt="g" class="img2" (click)="openSideBar()">
+  </div>
 
-     <div class="first-field" (click)="openSubSection()"><p class="p1">Giochi</p></div>
-     <div class="first-sub-field" *ngIf="firstSubIsOpen" (click)="openFirstSubList()">
-         <p class="p2">ESPLORA I GIOCHI</p>
-         <div class="first-sub-list" *ngIf="firstSubListIsOpen" >
+  <div class="first-field" (click)="openSubSection()">
+    <p class="p1">Giochi</p>
+  </div>
+  <div class="first-sub-field" *ngIf="firstSubIsOpen" (click)="openFirstSubList()">
+    <p class="p2">ESPLORA I GIOCHI</p>
+    <div class="first-sub-list" *ngIf="firstSubListIsOpen">
 
-            <a href="" class="ax">Ultimi giochi</a>
-            <a href="" class="ax">Prossimamente</a>
-            <a href=""class="ax">EA SPORTy
-                S</a>
-            <a href="" class="ax">Giochi gratuiti</a>
-            <a href="" class="ax">Libreria dei giochi</a>
-   
-        </div>
-        </div>
-    
-     <div class="second-sub-field" *ngIf="firstSubIsOpen" (click)="openSecondSubList()"><p class="p3">PIATTAFORME</p>
-        <div class="second-sub-list" *ngIf="secondSubListIsOpen">
-            <a href="" class="a2">PC</a>
-            <a href="" class="a2">Playstation</a>
-            <a href="" class="a2">Xbox Series X</a>
-            <a href="" class="a2">Nintendo Switch</a>
-            <a href="" class="a2">Cellulari</a>
-         </div>
-    </div>
-     
-    <div class="third-field" (click)="openThirdList()">
-        <p class="p1">Altre esperienze</p>
-        <div class="third-list" *ngIf="thirdListIsOpen">
-            <a href=""  class="a3">EA Play</a>
-            <a href="" class="a3">Origin</a>
-            <a href="" class="a3">Competizioni videoludiche</a>
-            <a href="" class="a3">Diretta di EA Play</a>
-         </div>
-    </div>
-  
-    <div class="fourth-field" (click)="openFourthList()">
-        <p class="p1">Informazioni</p>
-        <div class="fourth-list" *ngIf="fourthListIsOpen">
-            <a href="" class="a-4">Società</a>
-            <a href=""  class="a-4">EA Studi</a>
-            <a href=""  class="a-4">Lavora con noi</a>
-            <a href=""  class="a-4">La nostra tecnologia</a>
-            <a href=""  class="a-4">EA Partners</a>
-            <a href=""  class="a-4">Notizie</a>
-            <a href=""  class="a-4">Inside EA</a>
-         </div>
-    </div>
+      <a href="" class="ax">Ultimi giochi</a>
+      <a href="" class="ax">Prossimamente</a>
+      <a href="" class="ax">EA SPORTy
+        S</a>
+      <a href="" class="ax">Giochi gratuiti</a>
+      <a href="" class="ax">Libreria dei giochi</a>
 
-    <div class="fifth-field" (click)="openFifthList()">
-        <p class="p1">Impegni</p>
-        <div class="fifth-list" *ngIf="fifthListIsOpen">
-            <a href=""  class="a-4">Gioco positivo</a>
-            <a href=""  class="a-4">Diversità e inclusione</a>
-            <a href=""  class="a-4">Investire nella comunità</a>
-            <a href=""  class="a-4">Persone e cultura</a>
-            <a href=""  class="a-4">Ambiente</a>
-            
-         </div>
     </div>
+  </div>
 
-    <div class="sixth-field" (click)="openSixthList()">
-        <p class="p1">Risorse</p>
-        <div class="sixth-list" *ngIf="sixthListIsOpen">
-            <a href=""  class="a-4">Aiuto</a>
-            <a href=""  class="a-4">Forum</a>
-            <a href=""  class="a-4">Filtro famiglia</a>
-            <a href=""  class="a-4">Accessibilità</a>
-            <a href=""  class="a-4">Stampa</a>
-            <a href=""  class="a-4">Investitori</a>
-            <a href=""  class="a-4">Test di gioco</a>
-         </div>
+  <div class="second-sub-field" *ngIf="firstSubIsOpen" (click)="openSecondSubList()">
+    <p class="p3">PIATTAFORME</p>
+    <div class="second-sub-list" *ngIf="secondSubListIsOpen">
+      <a href="" class="a2">PC</a>
+      <a href="" class="a2">Playstation</a>
+      <a href="" class="a2">Xbox Series X</a>
+      <a href="" class="a2">Nintendo Switch</a>
+      <a href="" class="a2">Cellulari</a>
     </div>
-</div>
+  </div>
+
+  <div class="third-field" (click)="openThirdList()">
+    <p class="p1">Altre esperienze</p>
+    <div class="third-list" *ngIf="thirdListIsOpen">
+      <a href="" class="a3">EA Play</a>
+      <a href="" class="a3">Origin</a>
+      <a href="" class="a3">Competizioni videoludiche</a>
+      <a href="" class="a3">Diretta di EA Play</a>
+    </div>
+  </div>
+
+  <div class="fourth-field" (click)="openFourthList()">
+    <p class="p1">Informazioni</p>
+    <div class="fourth-list" *ngIf="fourthListIsOpen">
+      <a href="" class="a-4">Società</a>
+      <a href="" class="a-4">EA Studi</a>
+      <a href="" class="a-4">Lavora con noi</a>
+      <a href="" class="a-4">La nostra tecnologia</a>
+      <a href="" class="a-4">EA Partners</a>
+      <a href="" class="a-4">Notizie</a>
+      <a href="" class="a-4">Inside EA</a>
+    </div>
+  </div>
+
+  <div class="fifth-field" (click)="openFifthList()">
+    <p class="p1">Impegni</p>
+    <div class="fifth-list" *ngIf="fifthListIsOpen">
+      <a href="" class="a-4">Gioco positivo</a>
+      <a href="" class="a-4">Diversità e inclusione</a>
+      <a href="" class="a-4">Investire nella comunità</a>
+      <a href="" class="a-4">Persone e cultura</a>
+      <a href="" class="a-4">Ambiente</a>
+
+    </div>
+  </div>
+
+  <div class="sixth-field" (click)="openSixthList()">
+    <p class="p1">Risorse</p>
+    <div class="sixth-list" *ngIf="sixthListIsOpen">
+      <a href="" class="a-4">Aiuto</a>
+      <a href="" class="a-4">Forum</a>
+      <a href="" class="a-4">Filtro famiglia</a>
+      <a href="" class="a-4">Accessibilità</a>
+      <a href="" class="a-4">Stampa</a>
+      <a href="" class="a-4">Investitori</a>
+      <a href="" class="a-4">Test di gioco</a>
+    </div>
+  </div>
+</div> -->

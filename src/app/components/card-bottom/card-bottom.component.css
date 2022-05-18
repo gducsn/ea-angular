@@ -5,7 +5,7 @@
 }
 
 .container {
-  position: absolute;
+  position: relative;
   width: 100%;
   left: 0;
   right: 0;
@@ -13,16 +13,20 @@
 }
 
 .container img {
-  width: 100%;
+  width: 100vw;
+
   height: 600px;
+  object-fit: fill;
+
 }
 
 .immagine img {
   position: absolute;
-  top: 20%;
-  left: 5%;
-  height: 120px;
+  top: 28%;
+  left: 6%;
+  height: 100px;
   width: 400px;
+
 }
 
 .container .btn {
@@ -88,4 +92,18 @@
   transition-duration: 0.7s;
   transition-duration: 0.1s;
   transition-property: opacity;
+}
+
+@media only screen and (max-width: 768px) {
+  .container2 button {
+    display: none;
+  }
+
+  .btn {
+    width: 80vw;
+  }
+
+  .immagine img {
+    top: 25%;
+  }
 }

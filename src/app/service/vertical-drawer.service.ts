@@ -47,9 +47,13 @@ secondMenu(){
 }
 
 closeMenu(){
+  
   this.switchFirstObs.next(false)
   this.switchSecondObs.next(false)
+  this.switchFirst = false;
+  this.switchSecond = false;
   document.body.style.overflow = 'scroll';
+
 }
 
 returnFirst() {
